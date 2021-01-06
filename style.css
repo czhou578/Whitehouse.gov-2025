@@ -101,11 +101,11 @@ h2 {
   margin-left: 730px;
 }
  
-.card-1::hover {
-  box-shadow: 10px 10px purple;
+.card-1:hover {
+  box-shadow: 10px 10px 5px 5px purple;
 
 }
-.card-2::hover {
+.card-2:hover {
   box-shadow: 10px 10px purple;
 
 }
@@ -115,7 +115,7 @@ h2 {
   display: flex;
 }
 
-.card-1 > p, .card-2 > p, .card-3 > p {
+.card-1 > p, .card-2 > p, .card-3 > p, .card-4 > p {
   color: white;
   font-family: "Merriweather",serif;
   position: absolute;
@@ -124,6 +124,7 @@ h2 {
   font-weight: 700;
   font-size: 2.375rem;
   cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .card-1 > p:hover {
@@ -186,7 +187,7 @@ button {
   width: 18%;
 }
 
-.farm, .server, .building {
+.farm, .server, .building, .media {
   height: 150px;
   width: 200px;
   position: absolute;
@@ -195,7 +196,7 @@ button {
   display: flex;
 }
 
-.farm-2, .server-2, .building-2 {
+.farm-2, .server-2, .building-2, .media-2 {
   height: 150px;
   width: 200px;
   position: absolute;
