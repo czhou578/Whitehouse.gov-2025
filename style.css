@@ -75,22 +75,135 @@ h2 {
 }
 
 .card-1, .card-2 {
-  height: 450px;
+  height: 400px;
   width: 550px;
   position: absolute;
-  top: 85%;
+  top: 93%;
   left: 10%;
-  background-color: orange;
+  background-color: #212E5E;
   margin-left: 10px;
+  border-radius: 87px;
+}
+
+.card-3, .card-4 {
+  height: 400px;
+  width: 550px;
+  position: absolute;
+  top: 150%;
+  left: 14%;
+  background-color: #212E5E;
+  margin-left: 10px;
+  border-radius: 87px;
+
+}
+
+.card-4 {
+  margin-left: 730px;
+}
+ 
+.card-1::hover {
+  box-shadow: 10px 10px purple;
+
+}
+.card-2::hover {
+  box-shadow: 10px 10px purple;
+
 }
 
 .card-1 {
   margin-left: 100px;
+  display: flex;
+}
+
+.card-1 > p, .card-2 > p, .card-3 > p {
+  color: white;
+  font-family: "Merriweather",serif;
+  position: absolute;
+  top: 60%;
+  left: 17%;
+  font-weight: 700;
+  font-size: 2.375rem;
+  cursor: pointer;
+}
+
+.card-1 > p:hover {
+  text-decoration: underline;
 }
 
 .card-2 {
   margin-left: 800px;
 }
+
+.card-3 > p:hover {
+  text-decoration: underline;
+
+}
+
+.card-2 > p:hover {
+  text-decoration: underline;
+}
+
+#searchBar {
+  position: absolute;
+  top: 80%;
+  left: 32%;
+}
+
+input {
+  font-size: 20px;
+  height: 82.5px;
+  width: 592.8px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 30px;
+}
+
+button {
+  height: 86px;
+  width: 88.5px;
+  background-color: white;
+  position: relative;
+  right: 92px;
+  top: -3px;
+  border: none;
+  cursor: pointer;
+}
+
+#searchBar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  border-bottom: 2px solid #d5d7db;
+  width: 18%;
+}
+
+#searchBar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -7%;
+  border-bottom: 2px solid #d5d7db;
+  width: 18%;
+}
+
+.farm, .server, .building {
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  display: flex;
+}
+
+.farm-2, .server-2, .building-2 {
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  top: 25%;
+  left: 54%;
+
+}
+
 
 /* .topNav a {
   float: right;
