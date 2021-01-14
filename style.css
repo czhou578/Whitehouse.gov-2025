@@ -1,4 +1,7 @@
 :root {
+  --slate: #ccd6f6;
+  --navy: rgb(2,12,27,0.7);
+  --light-navy: #112240;
 }
 
 .loader {
@@ -14,6 +17,7 @@ body {
   padding: 0px;
   background-color: #0A192F;
   outline-style: none;
+  overflow-x: hidden;
 }
 
 ul {
@@ -48,6 +52,8 @@ h1 {
   position: absolute;
   left: 9%;
   z-index: 1;
+  object-fit: cover;
+  object-position: 100px;
 }
 
 img {
@@ -193,7 +199,7 @@ input {
 }
 
 button {
-  height: 86px;
+  height: 80.5px;
   width: 88.5px;
   background-color: white;
   position: relative;
@@ -257,6 +263,7 @@ button {
   position: absolute;
   top: 25%;
   left: 54%;
+  mix-blend-mode: multiply;
 
 }
 
@@ -281,13 +288,101 @@ picture > img {
   /* padding: 25px; */
 }
 
-h3 {
+#side, span {
   position: absolute;
-  margin-top: 78%;
-  margin-left: 100%;
-  writing-mode: vertical-lr;
+  margin-left: 98%;
+  overflow-x: hidden;
+  writing-mode: vertical-rl;
+  font-size: 15px;
   color: white;
+  z-index: 100;
+  white-space: nowrap;
+  margin-block-start: -30%;
+  margin-inline-start: -35%;
+  /* margin-inline-end: -45%; */
 }
+
+.default {
+  display: inline;
+  margin-left: 15px;
+  /* box-sizing: border-box; */
+}
+
+h3 {
+  color: white;
+  font-size: 34px;
+  text-decoration: underline;
+  position: relative;
+  left: 240px;
+  top: 700px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 600px 100px;
+  row-gap: 50px;
+  position: relative;
+  left: 200px;
+  position: relative;
+  top: 800px;
+  /* grid-template-rows: 150px; */
+}
+
+.grid-of-smallcards {
+  position: absolute;
+  top: 190%;
+  left: 35%;
+  border-style: dashed;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 80px;
+  right: 270px;
+  
+}
+
+[class*="to-be"] {
+  position: absolute;
+  /* display: inline-block; */
+  left: 30px;
+  height: 350px;
+  width: 344px;
+  max-height: fit-content;
+  box-shadow: 0 10px 30px -15px var(--navy);
+  background-color: var(--light-navy);
+}
+
+.to-be-defined-1 {
+  margin-left: 400px;
+}
+
+.to-be-defined-2 {
+  margin-left: 800px;
+}
+
+
+embed {
+  padding-left: 30px;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+h4 {
+  display: block;
+  /* margin-top: 100px;
+  margin-left: 70px; */
+  margin: 100px 0px 0px 30px;
+  font-size: 25px;
+  color: var(--slate);
+}
+
+
 
 
 /* .topNav a {
