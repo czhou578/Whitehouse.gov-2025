@@ -1,9 +1,10 @@
 import './App.css';
+import './Taskbar'
 
 function App() {
   return (
     <div>
-      This is it.
+      <Taskbar />
     </div>
   );
 }
