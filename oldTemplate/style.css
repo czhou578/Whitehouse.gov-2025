@@ -62,7 +62,7 @@ img {
 }
 
 nav {
-  background-color: #4D6ACE;
+  background-color: hsl(227, 57%, 55%, 0.9);
   overflow: hidden;
   padding: 15px;
   animation: nav-load 500ms ease-in;
