@@ -15,3 +15,22 @@ body {
   font-weight: 450;
   margin-left: 15%;
 }
+
+.title-descript {
+  margin-top: 20px;
+  font-size: 14px;
+  color: grey;
+}
+
+.internet-controls {
+  margin-top: 150px;
+  background-color: black;
+}
+
+.down-arrow {
+  margin-top: 10px;
+}
+
+.MuiSvgIcon-root {
+  cursor: pointer;
+}
