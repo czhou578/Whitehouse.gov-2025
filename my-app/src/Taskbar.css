@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+ul {
+  position: relative;
+  bottom: 90px;
+  float: right;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+a:hover {
+  color: rgb(46, 156, 192);
+}
+
+#logo {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  height: 100px;
+  width: 100px;
+}

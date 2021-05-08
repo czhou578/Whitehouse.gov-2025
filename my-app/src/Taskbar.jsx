@@ -1,9 +1,11 @@
+import whiteHouse from './imgs/whiteHouse.svg'
 
-
-
-function Taskbar() {
+export default function Taskbar() {
   return (
     <div>
+      <div id="logo">
+        <img src={whiteHouse} alt=""/>
+      </div>
       <ul>
         <li><a href="#">Economy</a></li>
         <li><a href="#">National Security</a></li>
@@ -14,3 +16,4 @@ function Taskbar() {
     </div>
   )
 }
+

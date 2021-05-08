@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cover-splash {
+  margin-top: 100px;
+}
+
+.head-title {
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 35px;
+  font-weight: 450;
+  margin-left: 15%;
+}
