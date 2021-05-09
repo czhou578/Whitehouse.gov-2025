@@ -15,7 +15,8 @@ export default function Infocard(props) {
       resources to ensure the safety of online data for millions of Americans.</p>
 
   } else if (props.msg === "third-par") {
-    return paragraphs = <p className="description"></p>
+    return paragraphs = <p className="description">Cybersecurity is a threat to millions of online users. Se how we are 
+      working with the private sector to coordinate and defend this country's cyberspace. </p>
   }
 
   return (

@@ -1,14 +1,8 @@
-/* .card-contain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 
 .description {
   color: white;
   font-size: 10px;
   max-width: 150px;
   white-space: normal;
-  margin-left: 150px;
+  margin-left: 50px;
 }

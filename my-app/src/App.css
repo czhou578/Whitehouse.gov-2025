@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.title {
+  margin-left: 100px;
+}
+
 .cover-splash {
   margin-top: 100px;
 }
@@ -29,14 +33,25 @@ body {
 
 .internet-controls h1 {
   padding-top: 50px;
-  margin-left: 150px;
+  margin-left: 50px;
   color: white;
 }
 
 .display-cards {
   display: flex;
+  /* justify-content: center; */
 }
 
+
+.info-wrap {
+  margin-left: 100px;
+  padding-bottom: 50px;
+}
+
+.info {
+  display: inline-block;
+  
+}
 .down-arrow {
   margin-top: 10px;
 }
