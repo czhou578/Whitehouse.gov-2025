@@ -33,6 +33,10 @@ body {
   color: white;
 }
 
+.display-cards {
+  display: flex;
+}
+
 .down-arrow {
   margin-top: 10px;
 }

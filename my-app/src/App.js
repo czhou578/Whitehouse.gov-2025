@@ -31,6 +31,16 @@ function App() {
           <InfoCard title="Cybersecurity" msg="third-par"/>
         </div>
       </section>
+      <section className="economy-controls">
+        <div>
+          <h1>Economy</h1>
+        </div>
+        <div className="display-cards">
+          <InfoCard title="Big Tech" msg="first-par"/>
+          <InfoCard title="Privacy Concerns" msg="second-par"/>
+          <InfoCard title="Cybersecurity" msg="third-par"/>
+        </div>
+      </section>
     </div>
   );
 }

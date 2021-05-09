@@ -17,7 +17,7 @@ export default function Infocard(props) {
   return (
 
     <div>
-      <div>
+      <div className="card-contain">
         <h1 className="header">{props.title}</h1>
         <div>
          {paragraphs}
