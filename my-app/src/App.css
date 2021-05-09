@@ -27,6 +27,12 @@ body {
   background-color: black;
 }
 
+.internet-controls h1 {
+  padding-top: 50px;
+  margin-left: 150px;
+  color: white;
+}
+
 .down-arrow {
   margin-top: 10px;
 }

@@ -1,7 +1,6 @@
 import './App.css';
 import './Taskbar.css'
 import './Infocard.css'
-import './paras.css'
 import Taskbar from './Taskbar'
 import InfoCard from './Infocard'
 import React, { Component } from 'react';
@@ -27,9 +26,9 @@ function App() {
           <h1>Internet Controls</h1>
         </div>
         <div className="display-cards">
-          <InfoCard title="Big Tech"/>
-          <InfoCard title="Privacy Concerns"/>
-          {/* <InfoCard title="Cybersecurity"/> */}
+          <InfoCard title="Big Tech" msg="first-par"/>
+          <InfoCard title="Privacy Concerns" msg="second-par"/>
+          <InfoCard title="Cybersecurity" msg="third-par"/>
         </div>
       </section>
     </div>
