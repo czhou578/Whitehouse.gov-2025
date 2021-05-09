@@ -26,20 +26,20 @@ function App() {
           <h1>Internet Controls</h1>
         </div>
         <div className="display-cards">
-          <InfoCard title="Big Tech" msg="first-par"/>
-          <InfoCard title="Privacy Concerns" msg="second-par"/>
-          <InfoCard title="Cybersecurity" msg="third-par"/>
+          <InfoCard category="tech" title="Big Tech" msg="first-par"/>
+          <InfoCard category="tech" title="Privacy Concerns" msg="second-par"/>
+          <InfoCard category="tech" title="Cybersecurity" msg="third-par"/>
         </div>
       </section>
       <section className="economy-controls">
         <div>
           <h1>Economy</h1>
         </div>
-        <div className="display-cards">
-          <InfoCard title="Big Tech" msg="first-par"/>
-          <InfoCard title="Privacy Concerns" msg="second-par"/>
-          <InfoCard title="Cybersecurity" msg="third-par"/>
-        </div>
+        {/* <div className="display-cards">
+          <InfoCard category="economy" title="The Year of $1000" msg="first-par"/>
+          <InfoCard category="economy" title="Unemployment" msg="second-par"/>
+          <InfoCard category="economy" title="Food Security" msg="third-par"/>
+        </div> */}
       </section>
     </div>
   );
