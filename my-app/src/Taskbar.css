@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+
+.container {
+  background: -webkit-linear-gradient(right, skyblue, #ffffff);
+  height: 75px;
+}
+
 ul {
   position: relative;
   bottom: 90px;
@@ -14,10 +20,12 @@ li {
 
 a {
   text-decoration: none;
-  color: grey;
+  color: black;
   font-family: 'Rubik', sans-serif;
   font-size: 12px;
   margin-right: 20px;
+  font-weight: 530;
+  
 }
 
 a:hover {

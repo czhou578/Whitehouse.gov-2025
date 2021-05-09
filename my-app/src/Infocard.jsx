@@ -1,7 +1,9 @@
+import './Infocard.css'
 
 
 export default function Infocard(props) {
 
+  let title = props.title
   let paragraphs;
 
   if (props.msg === "first-par") {
@@ -11,7 +13,7 @@ export default function Infocard(props) {
   } else if (props.msg === "second-par") {
     return paragraphs = <p className="description">Privacy is paramount in the digital world. We are pouring in 
       resources to ensure the safety of online data for millions of Americans.</p>
-      
+
   } else if (props.msg === "third-par") {
     return paragraphs = <p className="description"></p>
   }
@@ -19,7 +21,6 @@ export default function Infocard(props) {
   return (
     <div>
       <div className="card-contain">
-        <h1 className="header">{props.title}</h1>
         <div>
          {paragraphs}
         </div>

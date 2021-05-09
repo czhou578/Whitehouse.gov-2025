@@ -1,13 +1,9 @@
-.card-contain {
+/* .card-contain {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
-.header {
-  color: white;
-  font-size: 14px;
-}
 
 .description {
   color: white;

@@ -2,7 +2,7 @@ import whiteHouse from './imgs/whiteHouse.svg'
 
 export default function Taskbar() {
   return (
-    <div>
+    <div className="container">
       <div id="logo">
         <img src={whiteHouse} alt=""/>
       </div>
