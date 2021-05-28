@@ -28,20 +28,12 @@ body {
 
 .internet-controls {
   margin-top: 150px;
-  background-color: black;
-}
-
-.internet-controls h1 {
-  padding-top: 50px;
-  margin-left: 50px;
-  color: white;
+  background-color: darkblue;
 }
 
 .display-cards {
   display: flex;
-  /* justify-content: center; */
 }
-
 
 .info-wrap {
   margin-left: 100px;
@@ -58,4 +50,19 @@ body {
 
 .MuiSvgIcon-root {
   cursor: pointer;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.economy {
+  margin-top: 150px;
+  width: 60vw;
+  height: 30vh;
+}
+
+.econ-list {
+  display: table-cell;
+  vertical-align: middle;
 }

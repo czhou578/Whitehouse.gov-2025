@@ -12,7 +12,7 @@ function App() {
       <Taskbar />
       <section className="cover-splash">
         <div className="head-title">
-          Welcome to the <br></br> 2027 American ScoreCard
+          Welcome to the <br></br> 2027 American Scorecard
           <div className="title-descript">
             Check out our annual report below
             <div className="down-arrow">
@@ -28,24 +28,31 @@ function App() {
         <div className="display-cards">
           <div className="info-wrap">
             <div className="info">
-              <h1>Big Tech</h1>
-              <InfoCard title="Big Tech" msg="first-par"/>
+              <InfoCard title="Big Tech" msg="first-par" className="card"/>
             </div>
           </div>
           <div className="info-wrap">
-            <h1>Privacy</h1>
-            <InfoCard title="Privacy Concerns" msg="second-par"/>
+            <InfoCard title="Privacy Concerns" msg="second-par" className="card"/>
           </div>
           <div className="info-wrap">
-            <h1>Cybersecurity</h1>
-            <InfoCard title="Cybersecurity" msg="third-par"/>
+            <InfoCard title="Cybersecurity" msg="third-par" className="card"/>
           </div>
         </div>
       </section>
-      <section> 
+      <section className="economy"> 
         <div>
           <h1 class="title">Economy</h1>
+          <div className="info-wrap second">
+            <h1>See How Americans Are Navigating The New Economy</h1>
+            <ul className="econ-list">
+              <li>People's Bank</li>
+              <li>Automation Progress</li>
+              <li>Important Statistics</li>
+              <li>Cryptocurrencies</li>
+            </ul>
+          </div>
         </div>
+
       </section>
   
     </div>
