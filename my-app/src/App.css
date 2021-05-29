@@ -62,7 +62,29 @@ body {
   height: 30vh;
 }
 
+.line {
+  height: 2px;
+  width: 400px;
+  background-color: tan;
+  margin-left: 100px;
+}
+
 .econ-list {
-  display: table-cell;
-  vertical-align: middle;
+  margin-top: 100px;
+}
+
+li {
+  word-wrap: break-word;
+}
+
+.healthcare {
+  margin-top: 200px;
+}
+
+.environment {
+  margin-top: 200px;
+}
+
+.foreign-policy {
+  margin-top: 200px;
 }

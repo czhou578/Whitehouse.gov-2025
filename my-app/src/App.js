@@ -41,17 +41,26 @@ function App() {
       </section>
       <section className="economy"> 
         <div>
-          <h1 class="title">Economy</h1>
-          <div className="info-wrap second">
+          <h1 class="title">Economy And Finance</h1>
+          <div className="line"></div>
             <h1>See How Americans Are Navigating The New Economy</h1>
-            <ul className="econ-list">
-              <li>People's Bank</li>
-              <li>Automation Progress</li>
-              <li>Important Statistics</li>
-              <li>Cryptocurrencies</li>
-            </ul>
-          </div>
         </div>
+        <div>
+          <h5>People's Bank</h5> <br></br>
+          <h5>Automation Progress </h5> <br></br>
+          <h5>Important Statistics</h5> <br></br>
+          <h5>Cryptocurrencies</h5>
+        </div>
+      </section>
+      <section className="healthcare">
+        <h1 class="title">Health and Fitness</h1>
+      </section>
+      <section className="environment">
+        <h1 class="title">Environment Costs</h1>
+
+      </section>
+      <section className="foreign-policy">
+        <h1 class="title">Foreign Policy / Cooperation</h1>
 
       </section>
   
