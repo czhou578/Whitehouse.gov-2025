@@ -88,3 +88,8 @@ li {
 .foreign-policy {
   margin-top: 200px;
 }
+
+.cross-wrap {
+  height: 100px;
+  width: 100px;
+} 
