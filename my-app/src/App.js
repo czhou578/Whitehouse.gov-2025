@@ -3,6 +3,8 @@ import './Taskbar.css'
 import './Infocard.css'
 import Taskbar from './Taskbar'
 import InfoCard from './Infocard'
+import Environment from './Environment'
+import FPolicy from './FPolicy'
 import React, { Component } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
@@ -70,12 +72,12 @@ function App() {
       <section className="environment">
         <h1 class="title">Environment Costs</h1>
         <div className="line"></div>
-
+        <Environment />
       </section>
       <section className="foreign-policy">
         <h1 class="title">Foreign Policy / Cooperation</h1>
         <div className="line"></div>
-
+        <FPolicy />
       </section>
   
     </div>
