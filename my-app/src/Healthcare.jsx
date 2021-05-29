@@ -3,6 +3,7 @@ import './Infocard.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import './Healthcare.css'
 
 export default function Healthcare() {
 
@@ -10,13 +11,20 @@ export default function Healthcare() {
 
   const listItems = labels.map((label) => {
     <li key={label.toString()}>
-      {labels}
+      {label}
     </li>
   })
 
   return (
-    <ul>
-      {listItems}
-    </ul>
+    <div className="wrapper">
+      {/* Hello */}
+      <div className="list-wrap">
+        <ul>
+          {listItems}
+        </ul>
+
+      </div>
+
+    </div>
   )
 }

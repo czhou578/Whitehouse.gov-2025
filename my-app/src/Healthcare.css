@@ -1,0 +1,14 @@
+.wrapper {
+  background-color: tan;
+}
+
+.list-wrap {
+  height: 200px;
+  width: 40vw;
+  background-color: green;
+}
+
+.list-wrap > ul > li {
+  font-size: 20px;
+  color: white;
+}

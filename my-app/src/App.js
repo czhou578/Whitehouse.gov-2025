@@ -7,6 +7,7 @@ import Environment from './Environment'
 import FPolicy from './FPolicy'
 import React, { Component } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import Healthcare from './Healthcare';
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
       <section className="healthcare">
         <h1 class="title">Health and Fitness</h1>
         <div className="line"></div>
+        <Healthcare className="health"/>
         <div>
           <div className="cross-wrap">
             <svg width="170" height="131" viewBox="0 0 270 301" fill="none" xmlns="http://www.w3.org/2000/svg">
