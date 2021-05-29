@@ -54,13 +54,17 @@ function App() {
       </section>
       <section className="healthcare">
         <h1 class="title">Health and Fitness</h1>
+        <div className="line"></div>
+
       </section>
       <section className="environment">
         <h1 class="title">Environment Costs</h1>
+        <div className="line"></div>
 
       </section>
       <section className="foreign-policy">
         <h1 class="title">Foreign Policy / Cooperation</h1>
+        <div className="line"></div>
 
       </section>
   
