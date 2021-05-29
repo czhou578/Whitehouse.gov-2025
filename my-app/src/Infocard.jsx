@@ -6,8 +6,10 @@ import CardContent from '@material-ui/core/CardContent';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
-    backgroundColor: 'lightGrey'
+    maxWidth: 275,
+    maxHeight: 275,
+    backgroundColor: 'lightGrey',
+    padding: '5px'
   },
   bullet: {
     display: 'inline-block',
@@ -15,10 +17,10 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
-    fontSize: 14,
+    fontSize: 20,
   },
   pos: {
-    marginBottom: 12,
+    marginBottom: 10,
   },
 });
 
@@ -30,7 +32,7 @@ export default function Infocard(props) {
 
   if (props.msg === "first-par") {
     return paragraphs = 
-    <Card>
+    <Card id="card-1">
       <CardContent>
         <h1 className="headers">Big Tech</h1>
         <p className="description"> See our actions against the Big Tech monopoly and how we are making
@@ -41,7 +43,7 @@ export default function Infocard(props) {
     
   } else if (props.msg === "second-par") {
     return paragraphs = 
-    <Card>
+    <Card id="card-2">
       <CardContent>
         <h1 className="headers">Privacy</h1>
         <p className="description">Privacy is paramount in the digital world. We are pouring in 

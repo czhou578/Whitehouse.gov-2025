@@ -26,7 +26,7 @@ function App() {
       </section>
       <section className="internet-controls">
         <div>
-          <h1 class="title">Internet Controls</h1>
+          <h1 class="title" id="internet">Internet Controls</h1>
         </div>
         <div className="display-cards">
           <div className="info-wrap">
@@ -46,20 +46,21 @@ function App() {
         <div>
           <h1 class="title">Economy And Finance</h1>
           <div className="line"></div>
-            <h1>See How Americans Are Navigating The New Economy</h1>
+            <h1 id="econ-descrip">Americans are navigating this new world of finance. See how <br></br>
+            the administration is boosting economic growth.</h1>
         </div>
-        <div>
-          <h5>People's Bank</h5> <br></br>
-          <h5>Automation Progress </h5> <br></br>
-          <h5>Important Statistics</h5> <br></br>
-          <h5>Cryptocurrencies</h5>
+        <div className="vertical-econList">
+          <h5 className="econ-topics">People's Bank</h5> <br></br>
+          <h5 className="econ-topics">Automation Progress </h5> <br></br>
+          <h5 className="econ-topics">Important Statistics</h5> <br></br>
+          <h5 className="econ-topics">Cryptocurrencies</h5>
         </div>
       </section>
       <section className="healthcare">
         <h1 class="title">Health and Fitness</h1>
         <div className="line"></div>
         <Healthcare className="health"/>
-        <div>
+        <div className="cross-wrap-outer">
           <div className="cross-wrap">
             <svg width="170" height="131" viewBox="0 0 270 301" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Frame 2">

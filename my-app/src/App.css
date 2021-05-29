@@ -31,6 +31,10 @@ body {
   background-color: darkblue;
 }
 
+#internet {
+  color: white;
+}
+
 .display-cards {
   display: flex;
 }
@@ -87,10 +91,38 @@ li {
 
 .foreign-policy {
   margin-top: 200px;
-  
+
+}
+
+.cross-wrap-outer {
+  margin-left: 300px;
+  margin-top: 70px;
 }
 
 .cross-wrap {
   height: 100px;
   width: 100px;
 } 
+
+.vertical-econList {
+  position: relative;
+  margin-left: 250px;
+}
+
+.econ-topics::before {
+  content: "";
+  height: 20px;
+  position: absolute;
+  left: -23px;
+  border: 2px solid #876450;
+
+}
+
+h1 {
+  font-family: Lato,sans-serif;
+}
+
+#econ-descrip {
+  font-size: 15px;
+  margin-left: 100px;
+}

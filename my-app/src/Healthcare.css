@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
   background-color: tan;
 }
 
@@ -6,9 +6,13 @@
   height: 200px;
   width: 40vw;
   background-color: green;
-}
+} */
 
 .list-wrap > ul > li {
-  font-size: 20px;
-  color: white;
+  position: relative;
+  top: 100px;
+  right: 400px;
+  font-size: 15px;
+  color: black;
+  padding-left: 30px;
 }
