@@ -5,31 +5,24 @@ import Taskbar from './Taskbar'
 import InfoCard from './Infocard'
 import Environment from './Environment'
 import FPolicy from './FPolicy'
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Healthcare from './Healthcare';
+import ImportScript from './scriptLoader'
 
 
 function App() {
-  function changePanels() {
-    const econTopics = document.getElementsByClassName('econ-topics')
-    const econPanelDetail = document.getElementsByClassName('econ-panel-detail')
-    console.log(econTopics)
-  
-    let firstClick = false;
-  for (let i = 0; i < econTopics.length; i++) {
-    firstClick = true;
-    econTopics[i].addEventListener('click', function() {
-      econPanelDetail[i].removeAttribute('hidden')
-      for (let j = 0; j < econTopics.length; j++) {
-        if (j != i) {
-          econPanelDetail[j].setAttribute("hidden", "true");
-        }
-      }
-    })
-    
-  }
-  }
+  // ImportScript("my-app\src\mainSite.js")
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "my-app\src\mainSite.js";
+    script.async = true;
+    document.body.appendChild(script);
+  return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
   
   return (
     <div id="body">
@@ -94,10 +87,10 @@ function App() {
             </div>
 
           </div>
-          <h5 className="econ-topics" onClick={changePanels()}>People's Bank</h5> <br></br>
-          <h5 className="econ-topics" onClick={changePanels()}>Automation Progress </h5> <br></br>
-          <h5 className="econ-topics" onClick={changePanels()}>Important Statistics</h5> <br></br>
-          <h5 className="econ-topics" onClick={changePanels()}>Cryptocurrencies</h5>
+          <h5 className="econ-topics">People's Bank</h5> <br></br>
+          <h5 className="econ-topics">Automation Progress </h5> <br></br>
+          <h5 className="econ-topics">Important Statistics</h5> <br></br>
+          <h5 className="econ-topics">Cryptocurrencies</h5>
         </div>
       </section>
       <section className="healthcare">
