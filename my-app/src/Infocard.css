@@ -13,5 +13,17 @@
 }
 
 #card-1, #card-2 {
+  cursor: pointer;
   padding-bottom: 10px;
+  transition: top ease 0.5s;
+
 }
+
+#card-3 {
+  cursor: pointer;
+}
+
+#card-1:hover, #card-2:hover, #card-3:hover {
+  box-shadow: 5px 10px solid black;
+}
+

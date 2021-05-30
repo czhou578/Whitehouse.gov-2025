@@ -8,20 +8,20 @@ import HorizonTab from './HorizontalTab'
 
 export default function Healthcare() {
 
-  const labels = ["Insurance", "Medicare For All", "Lowering Drug Prices", "Stopping Addiction"]
+  // const labels = ["Insurance", "Medicare For All", "Lowering Drug Prices", "Stopping Addiction"]
 
-  const listItems = labels.map((label, index) => {
-    return <li key={index}>{label}</li>
-  })
+  // const listItems = labels.map((label, index) => {
+  //   return <li key={index}>{label}</li>
+  // })
 
   return (
     <div className="wrapper">
       {/* Hello */}
       <div className="list-wrap">
         <HorizonTab />
-        <ul>
+        {/* <ul>
           {listItems}
-        </ul>
+        </ul> */}
 
       </div>
 

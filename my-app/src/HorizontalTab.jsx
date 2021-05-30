@@ -18,7 +18,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
+        <Box p={1}>
           {children}
         </Box>
       )}
@@ -43,10 +43,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
-    width: '60vw',
+    width: '53vw',
     marginLeft: '400px',
-    marginTop: '50px'
+    marginTop: '50px',
   },
+
+  colinStyle: {
+    fontSize: '11px',
+    padding: '-15px'
+  }
+
 }));
 
 export default function SimpleTabs() {
@@ -61,10 +67,10 @@ export default function SimpleTabs() {
     <div className={classes.root}>
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-          <Tab label="Insurance" {...a11yProps(0)} />
-          <Tab label="Medicare For All" {...a11yProps(1)} />
-          <Tab label="Lowering Drug Prices" {...a11yProps(2)} />
-          <Tab label="Stopping Addiction" {...a11yProps(3)} />
+          <Tab label={<span className={classes.colinStyle}>Insurance</span>} {...a11yProps(0)}/>
+          <Tab label={<span className={classes.colinStyle}>Medicare For All</span>} {...a11yProps(1)} />
+          <Tab label={<span className={classes.colinStyle}>Lowering Drug Prices</span>} {...a11yProps(2)} />
+          <Tab label={<span className={classes.colinStyle}>Stopping Addiction</span>} {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

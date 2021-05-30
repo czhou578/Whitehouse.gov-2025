@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Infocard.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -24,15 +24,17 @@ const useStyles = makeStyles({
   },
 });
 
-
 export default function Infocard(props) {
   const classes = useStyles();
   let title = props.title
   let paragraphs;
 
+  const [level, setLevel] = useState(0)
+
+
   if (props.msg === "first-par") {
     return paragraphs = 
-    <Card id="card-1">
+    <Card id="card-1" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 7)}} zDepth={level}>
       <CardContent>
         <h1 className="headers">Big Tech</h1>
         <p className="description"> See our actions against the Big Tech monopoly and how we are making
@@ -43,7 +45,7 @@ export default function Infocard(props) {
     
   } else if (props.msg === "second-par") {
     return paragraphs = 
-    <Card id="card-2">
+    <Card id="card-2" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 7)}}>
       <CardContent>
         <h1 className="headers">Privacy</h1>
         <p className="description">Privacy is paramount in the digital world. We are pouring in 
@@ -53,7 +55,7 @@ export default function Infocard(props) {
 
   } else if (props.msg === "third-par") {
     return paragraphs = 
-    <Card>
+    <Card id="card-3" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 7)}}>
       <CardContent>
         <h1 className="headers">Cybersecurity</h1>
         <p className="description">Cybersecurity is a threat to millions of online users. Se how we are 
