@@ -9,7 +9,28 @@ import React, { Component } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Healthcare from './Healthcare';
 
+
 function App() {
+  function changePanels() {
+    const econTopics = document.getElementsByClassName('econ-topics')
+    const econPanelDetail = document.getElementsByClassName('econ-panel-detail')
+    console.log(econTopics)
+  
+    let firstClick = false;
+  for (let i = 0; i < econTopics.length; i++) {
+    firstClick = true;
+    econTopics[i].addEventListener('click', function() {
+      econPanelDetail[i].removeAttribute('hidden')
+      for (let j = 0; j < econTopics.length; j++) {
+        if (j != i) {
+          econPanelDetail[j].setAttribute("hidden", "true");
+        }
+      }
+    })
+    
+  }
+  }
+  
   return (
     <div id="body">
       <Taskbar />
@@ -50,10 +71,33 @@ function App() {
             the administration is boosting economic growth.</h1>
         </div>
         <div className="vertical-econList">
-          <h5 className="econ-topics">People's Bank</h5> <br></br>
-          <h5 className="econ-topics">Automation Progress </h5> <br></br>
-          <h5 className="econ-topics">Important Statistics</h5> <br></br>
-          <h5 className="econ-topics">Cryptocurrencies</h5>
+          <div className="econ-panel">
+            <div id="panel-1" className="econ-panel-detail" >
+              <div className="econ-descript">
+                <p>This is demo text</p>
+              </div>
+            </div>
+            <div id="panel-2" className="econ-panel-detail" hidden >
+              <div className="econ-descript">
+                <p>This is demo text2</p>
+              </div>
+            </div>
+            <div id="panel-3" className="econ-panel-detail" hidden >
+              <div className="econ-descript">
+                <p>This is demo text3</p>
+              </div>
+            </div>
+            <div id="panel-4" className="econ-panel-detail" hidden >
+              <div className="econ-descript">
+                <p>This is demo text4</p>
+              </div>
+            </div>
+
+          </div>
+          <h5 className="econ-topics" onClick={changePanels()}>People's Bank</h5> <br></br>
+          <h5 className="econ-topics" onClick={changePanels()}>Automation Progress </h5> <br></br>
+          <h5 className="econ-topics" onClick={changePanels()}>Important Statistics</h5> <br></br>
+          <h5 className="econ-topics" onClick={changePanels()}>Cryptocurrencies</h5>
         </div>
       </section>
       <section className="healthcare">

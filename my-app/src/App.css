@@ -62,9 +62,10 @@ body {
 }
 
 .economy {
+  position: relative;
   margin-top: 150px;
-  width: 60vw;
-  height: 30vh;
+  width: 100vw;
+  height: 50vh;
 }
 
 .line {
@@ -135,4 +136,14 @@ h1 {
 #econ-descrip {
   font-size: 15px;
   margin-left: 100px;
+}
+
+.econ-panel {
+  position: absolute;
+  right: 140%;
+  display: inline-block;
+}
+
+.econ-descript > p {
+  white-space: nowrap;
 }
