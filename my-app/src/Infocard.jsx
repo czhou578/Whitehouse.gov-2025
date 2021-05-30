@@ -34,7 +34,7 @@ export default function Infocard(props) {
 
   if (props.msg === "first-par") {
     return paragraphs = 
-    <Card id="card-1" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 7)}} zDepth={level}>
+    <Card id="card-1" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 9)}} zDepth={level}>
       <CardContent>
         <h1 className="headers">Big Tech</h1>
         <p className="description"> See our actions against the Big Tech monopoly and how we are making
