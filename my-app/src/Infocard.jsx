@@ -3,6 +3,8 @@ import './Infocard.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Box from '@material-ui/core/Box';
+
 
 const useStyles = makeStyles({
   root: {
@@ -22,6 +24,10 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 10,
   },
+
+  shadow: {
+    boxShadow: '15px'
+  }
 });
 
 export default function Infocard(props) {
@@ -45,17 +51,19 @@ export default function Infocard(props) {
     
   } else if (props.msg === "second-par") {
     return paragraphs = 
-    <Card id="card-2" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 7)}}>
-      <CardContent>
-        <h1 className="headers">Privacy</h1>
-        <p className="description">Privacy is paramount in the digital world. We are pouring in 
-          resources to ensure the safety of online data for millions of Americans.</p>
-      </CardContent>
-    </Card>
+    <Box onMouseOver={classes.shadow}>
+      <Card id="card-2" onMouseOver={() => {setLevel(level + 19)}} onMouseOut={() => {setLevel(level - 7)}}>
+        <CardContent>
+          <h1 className="headers">Privacy</h1>
+          <p className="description">Privacy is paramount in the digital world. We are pouring in 
+            resources to ensure the safety of online data for millions of Americans.</p>
+        </CardContent>
+      </Card>
+    </Box>
 
   } else if (props.msg === "third-par") {
     return paragraphs = 
-    <Card id="card-3" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 7)}}>
+    <Card id="card-3" onMouseOver={() => {setLevel(level + 19)}} onMouseOut={() => {setLevel(level - 7)}}>
       <CardContent>
         <h1 className="headers">Cybersecurity</h1>
         <p className="description">Cybersecurity is a threat to millions of online users. Se how we are 
@@ -65,7 +73,7 @@ export default function Infocard(props) {
 
   } else if (props.msg === "fourth-par") {
     return paragraphs = 
-    <Card id="card-3" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 7)}}>
+    <Card id="card-3" onMouseOver={() => {setLevel(level + 19)}} onMouseOut={() => {setLevel(level - 7)}}>
       <CardContent>
         <h1 className="headers">Tech Ethics</h1>
         <p className="description"> Ethical issues is paramount to building a fair and free cyberspace.

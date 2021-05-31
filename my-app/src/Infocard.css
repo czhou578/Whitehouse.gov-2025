@@ -23,7 +23,16 @@
   cursor: pointer;
 }
 
-#card-1:hover, #card-2:hover, #card-3:hover {
-  box-shadow: 5px 10px solid black;
+#card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover {
+  box-shadow: 5px 10px rgb(104, 98, 98);
+  transform: translateZ(16);
+  background-color: aliceblue;
+  transition: 0.25s ease-in-out;
+  will-change: transform;
+}
+
+#card-1:not(:hover), #card-2:not(:hover), #card-3:not(:hover), #card-4:not(:hover) {
+  box-shadow: 0px;
+  transition: 0.25s ease-out;
 }
 

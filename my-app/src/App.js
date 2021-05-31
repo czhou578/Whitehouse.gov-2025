@@ -41,6 +41,9 @@ function App() {
     <div id="body">
       <Taskbar />
       <section className="cover-splash">
+        <div className="cover-img">
+          <img src="https://i2.wp.com/media.nbcboston.com/2019/09/tlmd-efe-andrew-yang-matematics.jpg?fit=900%2C506&quality=85&resize=1200%2C675&strip=all&ssl=1"></img>
+        </div>
         <div className="head-title">
           Welcome to the <br></br> 2027 American Scorecard
           <div className="title-descript">
