@@ -63,6 +63,16 @@ export default function Infocard(props) {
       </CardContent>
     </Card>
 
+  } else if (props.msg === "fourth-par") {
+    return paragraphs = 
+    <Card id="card-3" onMouseOver={() => {setLevel(level + 9)}} onMouseOut={() => {setLevel(level - 7)}}>
+      <CardContent>
+        <h1 className="headers">Tech Ethics</h1>
+        <p className="description"> Ethical issues is paramount to building a fair and free cyberspace.
+          This administration has put together a special council to judge ethics in the tech world. </p>      
+      </CardContent>
+    </Card>
+
   }
 
   return (

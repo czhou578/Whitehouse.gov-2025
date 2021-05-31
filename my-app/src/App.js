@@ -67,6 +67,9 @@ function App() {
           <div className="info-wrap">
             <InfoCard title="Cybersecurity" msg="third-par" className="card"/>
           </div>
+          <div className="info-wrap">
+            <InfoCard title="Tech Ethics" msg="fourth-par" className="card"/>
+          </div>
         </div>
       </section>
       <section className="economy"> 
@@ -80,8 +83,8 @@ function App() {
           <div className="econ-panel">
             <div id="panel-1" className="econ-panel-detail" >
               <div className="econ-descript">
-                <p>We have set up a People's Bank, in order to make money more accessible for others. This allows for 
-                  easy transfer of money through federal stimulus, and makes sure that even in impoverished areas, money
+                <p>We have set up a People's Bank, in order to make money more accessible for others. This allows for <br></br>
+                  easy transfer of money through federal stimulus, and makes sure that even in impoverished areas, money <br></br>
                   can be easily transferred and accessed.
                 </p>
               </div>
@@ -97,12 +100,18 @@ function App() {
             </div>
             <div id="panel-3" className="econ-panel-detail" hidden >
               <div className="econ-descript">
-                <p>This is demo text3</p>
+                <p>Economic statistics are inportant for this administration's policies. We are actively cooperating
+                  with the Bureau of Labor Statistics to put together a weekly report of this country's economic state. 
+                  This will allow us to make better decisions. 
+                </p>
               </div>
             </div>
             <div id="panel-4" className="econ-panel-detail" hidden >
               <div className="econ-descript">
-                <p>This is demo text4</p>
+                <p>Cryptocurrencies have become more ubiquitous in our society, which ends up posing its own
+                  unique challenges. Look at how we are utilizing blockchain across this country to speed up transactions
+                  and applications, while carefully monitoring the crypto space for any violations and theft.
+                </p>
               </div>
             </div>
 

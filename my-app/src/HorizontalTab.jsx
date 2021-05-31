@@ -84,11 +84,11 @@ export default function SimpleTabs() {
             <defs>
               <linearGradient id="right">
                 <stop offset="0" stop-color="#ff0000">
-                  <animate dur="5s" attributeName="offset" fill="freeze" from="0" to="1" />
+                  <animate dur="3s" attributeName="offset" fill="freeze" from="0" to="1" />
                 </stop>
                 <stop offset="0" stop-color="#fff">
-                  <animate dur="5s" attributeName="offset" fill="freeze" from="0" to="1" />
-                </stop>          
+                  <animate dur="3s" attributeName="offset" fill="freeze" from="0" to="1" />
+                </stop>
               </linearGradient>
             </defs>
             <g id="Frame 2">
