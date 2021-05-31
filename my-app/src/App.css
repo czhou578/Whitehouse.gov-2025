@@ -85,6 +85,11 @@ li {
 
 .healthcare {
   margin-top: 200px;
+  background-color: rgb(31, 147, 201);
+}
+
+.healthcare > h1 {
+  color: aqua;
 }
 
 .environment {

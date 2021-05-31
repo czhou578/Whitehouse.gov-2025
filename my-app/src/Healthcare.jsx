@@ -6,6 +6,11 @@ import CardContent from '@material-ui/core/CardContent';
 import './Healthcare.css'
 import HorizonTab from './HorizontalTab'
 
+const styles = {
+  backgroundColor: '#2836a1',
+  display: 'inline-block'
+}
+
 export default function Healthcare() {
 
   // const labels = ["Insurance", "Medicare For All", "Lowering Drug Prices", "Stopping Addiction"]
@@ -15,7 +20,7 @@ export default function Healthcare() {
   // })
 
   return (
-    <div className="wrapper">
+    <div className="wrapper" style={styles}>
       {/* Hello */}
       <div className="list-wrap">
         <HorizonTab />

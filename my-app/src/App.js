@@ -80,12 +80,19 @@ function App() {
           <div className="econ-panel">
             <div id="panel-1" className="econ-panel-detail" >
               <div className="econ-descript">
-                <p>This is demo text</p>
+                <p>We have set up a People's Bank, in order to make money more accessible for others. This allows for 
+                  easy transfer of money through federal stimulus, and makes sure that even in impoverished areas, money
+                  can be easily transferred and accessed.
+                </p>
               </div>
             </div>
             <div id="panel-2" className="econ-panel-detail" hidden >
               <div className="econ-descript">
-                <p>This is demo text2</p>
+                <p>Automation is a new challenge that is facing America. It will unleash a wave of displacement that
+                  has been unseen for hundreds of years. The administration is actively finding ways to support workers
+                  that would otherwise suffer during this massive increase in productivity. We need to reap the rewards
+                  of our progress.
+                </p>
               </div>
             </div>
             <div id="panel-3" className="econ-panel-detail" hidden >
@@ -112,21 +119,6 @@ function App() {
         <Healthcare className="health"/>
         <div className="cross-wrap-outer">
           <div className="cross-wrap">
-          <svg width="170" height="101" viewBox="0 0 270 301" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="right">
-                <stop offset="0" stop-color="#ff0000">
-                  <animate dur="5s" attributeName="offset" fill="freeze" from="0" to="1" />
-                </stop>
-                <stop offset="0" stop-color="#fff">
-                  <animate dur="5s" attributeName="offset" fill="freeze" from="0" to="1" />
-                </stop>          
-              </linearGradient>
-            </defs>
-            <g id="Frame 2">
-            <path id="Vector 2" d="M181 38.5H88V117.5H26V194.5H88V276H181V194.5H239V117.5H232H181V38.5Z" stroke="black" stroke-width="6" fill="url(#right)"/>
-            </g>
-          </svg>
 
           </div>
         </div>
