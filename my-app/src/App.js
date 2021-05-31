@@ -5,25 +5,36 @@ import Taskbar from './Taskbar'
 import InfoCard from './Infocard'
 import Environment from './Environment'
 import FPolicy from './FPolicy'
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useRef, useState } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Healthcare from './Healthcare';
-import ImportScript from './scriptLoader'
 
 
 function App() {
-  // ImportScript("my-app\src\mainSite.js")
+
+  function test() {
+    const econTopics = document.querySelectorAll('.econ-topics')
+    const econPanelDetail = document.querySelectorAll('.econ-panel-detail')
+    let firstClick = false;
+    for (let i = 0; i < econTopics.length; i++) {
+      firstClick = true;
+      console.log('hello')
+      econTopics[i].addEventListener('click', function() {
+      econPanelDetail[i].removeAttribute("hidden")
+      for (let j = 0; j < econTopics.length; j++) {
+        if (j != i) {
+          econPanelDetail[j].setAttribute("hidden", "true");
+        }
+      }
+    })
+
+    }
+  }
 
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "my-app\src\mainSite.js";
-    script.async = true;
-    document.body.appendChild(script);
-  return () => {
-      document.body.removeChild(script);
-    }
-  }, []);
-  
+    test();
+  })
+
   return (
     <div id="body">
       <Taskbar />
