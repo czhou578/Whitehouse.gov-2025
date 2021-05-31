@@ -12,7 +12,7 @@ import Healthcare from './Healthcare';
 
 function App() {
 
-  function test() {
+  function cycleEconPanels() {
     const econTopics = document.querySelectorAll('.econ-topics')
     const econPanelDetail = document.querySelectorAll('.econ-panel-detail')
     let firstClick = false;
@@ -31,8 +31,10 @@ function App() {
     }
   }
 
+
+
   useEffect(() => {
-    test();
+    cycleEconPanels();
   })
 
   return (
@@ -110,10 +112,10 @@ function App() {
         <Healthcare className="health"/>
         <div className="cross-wrap-outer">
           <div className="cross-wrap">
-            <svg width="170" height="131" viewBox="0 0 270 301" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="170" height="101" viewBox="0 0 270 301" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="right">
-                <stop offset="0" stop-color="#36f59f">
+                <stop offset="0" stop-color="#ff0000">
                   <animate dur="5s" attributeName="offset" fill="freeze" from="0" to="1" />
                 </stop>
                 <stop offset="0" stop-color="#fff">
@@ -122,10 +124,10 @@ function App() {
               </linearGradient>
             </defs>
             <g id="Frame 2">
-            <path id="Vector 2" d="M181 38.5H88V117.5H26V194.5H88V276H181V194.5H239V117.5H232H181V38.5Z" stroke="black" stroke-width="6"/>
-            <circle id="Ellipse 5" cx="212.5" cy="117.5" r="8.5" fill="#1D1111"/>
+            <path id="Vector 2" d="M181 38.5H88V117.5H26V194.5H88V276H181V194.5H239V117.5H232H181V38.5Z" stroke="black" stroke-width="6" fill="url(#right)"/>
             </g>
-            </svg>
+          </svg>
+
           </div>
         </div>
 

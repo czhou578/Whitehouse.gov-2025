@@ -129,6 +129,10 @@ li {
   color: rgb(57, 57, 209);
 }
 
+.econ-topics:hover:before {
+  border: 2px solid rgb(57, 57, 209);
+}
+
 h1 {
   font-family: Lato,sans-serif;
 }
