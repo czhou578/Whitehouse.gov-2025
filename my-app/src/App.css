@@ -19,13 +19,14 @@ body {
 
 .cover-img {
   position: absolute;
-  left: 60%;
+  left: 50%;
   top: -80px;
 }
 
 .cover-img > img {
   height: 350px;
-  width: 550px;
+  width: 650px;
+  border-radius: 5px;
 }
 
 .head-title {
@@ -44,7 +45,7 @@ body {
 
 .internet-controls {
   margin-top: 150px;
-  background-color: lightgrey;
+  background-color: rgb(71, 111, 221);
 }
 
 #internet {

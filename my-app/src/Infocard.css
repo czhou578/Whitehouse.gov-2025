@@ -24,7 +24,7 @@
 }
 
 #card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover {
-  box-shadow: 5px 10px rgb(104, 98, 98);
+  box-shadow: 5px 10px rgb(39, 36, 68);
   transform: translateZ(16);
   background-color: aliceblue;
   transition: 0.25s ease-in-out;
