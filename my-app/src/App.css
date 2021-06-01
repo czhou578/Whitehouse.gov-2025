@@ -13,11 +13,19 @@ body {
 }
 
 .cover-splash {
+  position: relative;
   margin-top: 100px;
 }
 
 .cover-img {
-  
+  position: absolute;
+  left: 60%;
+  top: -80px;
+}
+
+.cover-img > img {
+  height: 350px;
+  width: 550px;
 }
 
 .head-title {
