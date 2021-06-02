@@ -84,7 +84,7 @@ function App() {
         <div className="img-container">
           <img src="https://innovationorigins.com/app/uploads/2021/04/technology-4256272_1920-1004x670.jpg"></img>
           <div className="ai-link">
-            Read the 2027 AI Commission Newsletter
+            <a>Read the 2027 AI Commission Newsletter</a>
           </div>
         </div>
       </section>

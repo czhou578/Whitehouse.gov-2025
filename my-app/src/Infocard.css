@@ -1,7 +1,7 @@
 
 .description {
   color: black;
-  font-size: 10px;
+  font-size: 13px;
   max-width: 150px;
   white-space: normal;
   margin-left: 50px;
@@ -21,6 +21,10 @@
 
 #card-3 {
   cursor: pointer;
+}
+
+#card-1, #card-2, #card-3, #card-4 {
+  height: 200px;
 }
 
 #card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover {
