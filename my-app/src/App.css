@@ -10,6 +10,7 @@ body {
 
 .title {
   margin-left: 100px;
+  font-family: MercuryTextG2-Semibold-Pro_Web;
 }
 
 .cover-splash {
@@ -48,6 +49,10 @@ body {
   background-color: rgb(71, 111, 221);
 }
 
+.internet-controls .line {
+  margin-bottom: 30px;
+}
+
 #internet {
   padding-top: 20px;
   color: white;
@@ -80,9 +85,26 @@ body {
 
 .economy {
   position: relative;
-  margin-top: 150px;
+  margin-top: 50px;
   width: 100vw;
-  height: 50vh;
+  height: 55vh;
+  background-color: rgb(166, 168, 180);
+}
+
+.economy > div > h1 {
+  padding-top: 20px;
+  color: black;
+  margin-left: 40%;
+}
+
+.economy .line {
+  margin-left: 35%;
+}
+
+.economy .chart {
+  margin-left: 35%;
+  height: 500px;
+  width: 870px;
 }
 
 .line {
@@ -154,6 +176,11 @@ li {
 .econ-topics:hover:before {
   border: 2px solid rgb(57, 57, 209);
 }
+
+/* .econ-topics:focus {
+  color: rgb(57, 57, 209);
+
+} */
 
 h1 {
   font-family: Lato,sans-serif;

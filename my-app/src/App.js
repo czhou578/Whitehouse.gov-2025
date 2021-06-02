@@ -8,6 +8,7 @@ import FPolicy from './FPolicy'
 import React, { Component, useEffect, useRef, useState } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Healthcare from './Healthcare';
+import PieChart from './PieChart'
 
 
 function App() {
@@ -18,11 +19,13 @@ function App() {
     let firstClick = false;
     for (let i = 0; i < econTopics.length; i++) {
       firstClick = true;
-      console.log('hello')
+
       econTopics[i].addEventListener('click', function() {
       econPanelDetail[i].removeAttribute("hidden")
+      econTopics[i].style.color = 'blue'
       for (let j = 0; j < econTopics.length; j++) {
         if (j != i) {
+          econTopics[j].style.color = 'black'
           econPanelDetail[j].setAttribute("hidden", "true");
         }
       }
@@ -56,7 +59,8 @@ function App() {
       </section>
       <section className="internet-controls">
         <div>
-          <h1 class="title" id="internet">Internet Controls</h1>
+          <h1 class="title" id="internet">Internet Controls and Cyberspace</h1>
+          <div className="line"></div>
         </div>
         <div className="display-cards">
           <div className="info-wrap">
@@ -79,8 +83,8 @@ function App() {
         <div>
           <h1 class="title">Economy And Finance</h1>
           <div className="line"></div>
-            <h1 id="econ-descrip">Americans are navigating this new world of finance. See how <br></br>
-            the administration is boosting economic growth.</h1>
+            <h2 id="econ-descrip">Americans are navigating this new world of finance. See how <br></br>
+            the administration is boosting economic growth.</h2>
         </div>
         <div className="vertical-econList">
           <div className="econ-panel">
@@ -145,6 +149,12 @@ function App() {
         <h1 class="title">Foreign Policy / Cooperation</h1>
         <div className="line"></div>
         {/* <FPolicy /> */}
+      </section>
+      <section className="budget">
+        <div className="chart">
+          <PieChart />
+        </div>
+
       </section>
   
     </div>
