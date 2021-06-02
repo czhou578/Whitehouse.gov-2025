@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -10,7 +11,8 @@ body {
 
 .title {
   margin-left: 100px;
-  font-family: MercuryTextG2-Semibold-Pro_Web;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .cover-splash {
@@ -44,13 +46,38 @@ body {
   color: grey;
 }
 
+.speeches {
+  margin-top: 300px;
+}
+
+.speeches .title {
+  margin-left: 40%;
+  color: rgb(119, 119, 25);
+}
+
 .internet-controls {
   margin-top: 150px;
-  background-color: rgb(71, 111, 221);
+  
+  background-color: black;
 }
 
 .internet-controls .line {
   margin-bottom: 30px;
+}
+
+.internet-controls img {
+  width: 500px;
+  margin-left: 300px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.img-container {
+  display: flex;
+}
+
+.ai-link {
+  color: white;
 }
 
 #internet {
@@ -99,12 +126,6 @@ body {
 
 .economy .line {
   margin-left: 35%;
-}
-
-.economy .chart {
-  margin-left: 35%;
-  height: 500px;
-  width: 870px;
 }
 
 .line {
@@ -202,4 +223,15 @@ h1 {
 
 .econ-descript > p {
   position: relative;
+}
+
+.budget .chart {
+  margin-top: 50px;
+  margin-left: 30%;
+  height: 500px;
+  width: 1070px;
+}
+
+.budget {
+  margin-top: 300px;
 }

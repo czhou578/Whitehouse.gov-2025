@@ -57,6 +57,9 @@ function App() {
           </div>
         </div>
       </section>
+      <section className="speeches">
+        <h1 className="title">The President's Speeches</h1>
+      </section>
       <section className="internet-controls">
         <div>
           <h1 class="title" id="internet">Internet Controls and Cyberspace</h1>
@@ -78,6 +81,12 @@ function App() {
             <InfoCard title="Tech Ethics" msg="fourth-par" className="card"/>
           </div>
         </div>
+        <div className="img-container">
+          <img src="https://innovationorigins.com/app/uploads/2021/04/technology-4256272_1920-1004x670.jpg"></img>
+          <div className="ai-link">
+            Read the 2027 AI Commission Newsletter
+          </div>
+        </div>
       </section>
       <section className="economy"> 
         <div>
@@ -95,6 +104,9 @@ function App() {
                   can be easily transferred and accessed.
                 </p>
               </div>
+              <div>
+                <img src="https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2021/03/printing-money.jpg?quality=80&strip=all&ssl=1"></img>
+              </div>
             </div>
             <div id="panel-2" className="econ-panel-detail" hidden >
               <div className="econ-descript">
@@ -103,6 +115,9 @@ function App() {
                   that would otherwise suffer during this massive increase in productivity. We need to reap the rewards
                   of our progress.
                 </p>
+              </div>
+              <div>
+                <img src="https://youmatter.world/app/uploads/sites/2/2019/11/robot-automation-jobs.jpg"></img>
               </div>
             </div>
             <div id="panel-3" className="econ-panel-detail" hidden >
@@ -119,6 +134,9 @@ function App() {
                   unique challenges. Look at how we are utilizing blockchain across this country to speed up transactions
                   and applications, while carefully monitoring the crypto space for any violations and theft.
                 </p>
+              </div>
+              <div>
+                <img src="https://wall-street.com/wp-content/uploads/2018/08/aug-1-header-pic.jpg"></img>
               </div>
             </div>
 
@@ -151,6 +169,8 @@ function App() {
         {/* <FPolicy /> */}
       </section>
       <section className="budget">
+        <h1 class="title">Budget Overview</h1>
+        <div className="line"></div>
         <div className="chart">
           <PieChart />
         </div>

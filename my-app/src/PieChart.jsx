@@ -30,7 +30,6 @@ class PieChart extends Component {
 		
 		return (
 		<div>
-			<h1>React Pie Chart</h1>
 			<CanvasJSChart options = {options} 
 			/>
 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
