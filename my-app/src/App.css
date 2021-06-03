@@ -50,13 +50,19 @@ body {
   margin-top: 300px;
 }
 
+.speeches img {
+  height: 300px;
+  margin-left: 150px;
+  border-radius: 5px;
+}
+
 .speeches .title {
   margin-left: 40%;
   color: rgb(119, 119, 25);
 }
 
 .internet-controls {
-  margin-top: 150px;
+  margin-top: 250px;
   background-color: black;
 }
 

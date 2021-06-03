@@ -9,6 +9,7 @@ import React, { Component, useEffect, useRef, useState } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Healthcare from './Healthcare';
 import PieChart from './PieChart'
+import Speech from './Speeches'
 
 
 function App() {
@@ -59,6 +60,12 @@ function App() {
       </section>
       <section className="speeches">
         <h1 className="title">The President's Speeches</h1>
+        <div>
+          <img src="https://media.beam.usnews.com/bd/d9/9daaf73b47b8a7d1e6189550a7e2/andrewyang-002.JPG"></img>
+        </div>
+        <div className="excerpts">
+          <Speech />
+        </div>
       </section>
       <section className="internet-controls">
         <div>
