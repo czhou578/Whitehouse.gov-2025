@@ -96,62 +96,62 @@ function App() {
         </div>
       </section>
       <section className="economy"> 
-        <div>
-          <h1 class="title">Economy And Finance</h1>
-          <div className="line"></div>
-            <h2 id="econ-descrip">Americans are navigating this new world of finance. See how <br></br>
-            the administration is boosting economic growth.</h2>
-        </div>
-        <div className="vertical-econList">
-          <div className="econ-panel">
-            <div id="panel-1" className="econ-panel-detail" >
-              <div className="econ-descript">
-                <p>We have set up a People's Bank, in order to make money more accessible for others. This allows for <br></br>
-                  easy transfer of money through federal stimulus, and makes sure that even in impoverished areas, money <br></br>
-                  can be easily transferred and accessed.
-                </p>
-              </div>
-              <div>
-                <img src="https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2021/03/printing-money.jpg?quality=80&strip=all&ssl=1"></img>
-              </div>
-            </div>
-            <div id="panel-2" className="econ-panel-detail" hidden >
-              <div className="econ-descript">
-                <p>Automation is a new challenge that is facing America. It will unleash a wave of displacement that
-                  has been unseen for hundreds of years. The administration is actively finding ways to support workers
-                  that would otherwise suffer during this massive increase in productivity. We need to reap the rewards
-                  of our progress.
-                </p>
-              </div>
-              <div>
-                <img src="https://youmatter.world/app/uploads/sites/2/2019/11/robot-automation-jobs.jpg"></img>
-              </div>
-            </div>
-            <div id="panel-3" className="econ-panel-detail" hidden >
-              <div className="econ-descript">
-                <p>Economic statistics are inportant for this administration's policies. We are actively cooperating
-                  with the Bureau of Labor Statistics to put together a weekly report of this country's economic state. 
-                  This will allow us to make better decisions. 
-                </p>
-              </div>
-            </div>
-            <div id="panel-4" className="econ-panel-detail" hidden >
-              <div className="econ-descript">
-                <p>Cryptocurrencies have become more ubiquitous in our society, which ends up posing its own
-                  unique challenges. Look at how we are utilizing blockchain across this country to speed up transactions
-                  and applications, while carefully monitoring the crypto space for any violations and theft.
-                </p>
-              </div>
-              <div>
-                <img src="https://wall-street.com/wp-content/uploads/2018/08/aug-1-header-pic.jpg"></img>
-              </div>
-            </div>
-
+        <div class="econ-wrap">
+          <div>
+            <h1 class="title">Economy And Finance</h1>
+            <div className="line"></div>
           </div>
-          <h5 className="econ-topics">People's Bank</h5> <br></br>
-          <h5 className="econ-topics">Automation Progress </h5> <br></br>
-          <h5 className="econ-topics">Important Statistics</h5> <br></br>
-          <h5 className="econ-topics">Cryptocurrencies</h5>
+          <div className="vertical-econList">
+            <div className="econ-panel">
+              <div id="panel-1" className="econ-panel-detail" >
+                <div className="econ-descript">
+                  <div>
+                    <img src="https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2021/03/printing-money.jpg?quality=80&strip=all&ssl=1"></img>
+                  </div>
+                  <p>We have set up a People's Bank, in order to make money more accessible for others. This allows for <br></br>
+                    easy transfer of money through federal stimulus, and makes sure that even in impoverished areas, money <br></br>
+                    can be easily transferred and accessed.
+                  </p>
+                </div>
+              </div>
+              <div id="panel-2" className="econ-panel-detail" hidden >
+                <div className="econ-descript">
+                  <div>
+                    <img src="https://youmatter.world/app/uploads/sites/2/2019/11/robot-automation-jobs.jpg"></img>
+                  </div>
+                  <p>Automation is a new challenge that is facing America. It will unleash a wave of displacement that
+                    has been unseen for hundreds of years. The administration is actively finding ways to support workers
+                    that would otherwise suffer during this massive increase in productivity. We need to reap the rewards
+                    of our progress.
+                  </p>
+                </div>
+              </div>
+              <div id="panel-3" className="econ-panel-detail" hidden >
+                <div className="econ-descript">
+                  <p>Economic statistics are inportant for this administration's policies. We are actively cooperating
+                    with the Bureau of Labor Statistics to put together a weekly report of this country's economic state. 
+                    This will allow us to make better decisions. 
+                  </p>
+                </div>
+              </div>
+              <div id="panel-4" className="econ-panel-detail" hidden >
+                <div className="econ-descript">
+                  <div>
+                    <img src="https://wall-street.com/wp-content/uploads/2018/08/aug-1-header-pic.jpg"></img>
+                  </div>
+                  <p>Cryptocurrencies have become more ubiquitous in our society, which ends up posing its own
+                    unique challenges. Look at how we are utilizing blockchain across this country to speed up transactions
+                    and applications, while carefully monitoring the crypto space for any violations and theft.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <h5 className="econ-topics">People's Bank</h5> <br></br>
+            <h5 className="econ-topics">Automation Progress </h5> <br></br>
+            <h5 className="econ-topics">Important Statistics</h5> <br></br>
+            <h5 className="econ-topics">Cryptocurrencies</h5>
+          </div>
         </div>
       </section>
       <section className="healthcare">

@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginLeft: '650px',
-    marginTop: '-220px'
+    marginTop: '-270px'
   },
   paper: {
     padding: theme.spacing(1),
@@ -15,8 +15,15 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
     backgroundColor: 'lightYellow',
     cursor: 'pointer',
-    marginTop: '25px'
+    marginTop: '25px',
   },
+  
+  effects: {
+    '&::hover': {
+      color: 'red'
+    },
+    
+  }
 }));
 
 export default function NestedGrid() {
@@ -26,10 +33,16 @@ export default function NestedGrid() {
     return (
       <React.Fragment>
         <Grid item xs={4}>
-          <Paper className={classes.paper}>President's Remarks 1</Paper>
+          <Paper className={classes.paper}>
+            <a href="#">President's Remarks 1</a> <br></br>
+            <time>May 27, 2027</time>
+          </Paper>
         </Grid>
         <Grid item xs={4}>
-          <Paper className={classes.paper}>President's Remarks 2</Paper>
+          <Paper className={classes.paper}>
+            <a href="#">President's Remarks 2</a> <br></br>
+            <time>April 12, 2027</time>  
+          </Paper>
         </Grid>
         {/* <Grid item xs={4}>
           <Paper className={classes.paper}>item</Paper>

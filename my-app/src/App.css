@@ -131,8 +131,12 @@ body {
   position: relative;
   margin-top: 50px;
   width: 100vw;
-  height: 55vh;
-  background-color: rgb(166, 168, 180);
+  height: 85vh;
+}
+
+.econ-wrap {
+  background-image: linear-gradient(white, lightBlue);
+  height: 90vh;
 }
 
 .economy > div > h1 {
@@ -161,11 +165,12 @@ li {
 }
 
 .healthcare {
-  margin-top: 200px;
-  background-color: rgb(31, 147, 201);
+  background-color: black;
+  /* background-image: linear-gradient(lightBlue, white); */
 }
 
 .healthcare > h1 {
+  padding-top: 50px;
   color: aqua;
 }
 
@@ -238,6 +243,31 @@ h1 {
   width: 400px;
 }
 
+#panel-1 img {
+  height: 300px;
+  width: 400px;
+}
+
+#panel-2 img {
+  height: 300px;
+  width: 470px;
+
+}
+
+#panel-4 img{
+  height: 200px;
+  width: 350px;
+
+}
+
+.econ-descript {
+  margin-top: -100px;
+}
+
+.vertical-econList {
+  margin-top: 200px;
+}
+
 .econ-descript > p {
   position: relative;
 }
@@ -251,4 +281,13 @@ h1 {
 
 .budget {
   margin-top: 300px;
+}
+
+.foreign-policy {
+  background-color: black;
+}
+
+.foreign-policy h1 {
+  color: white;
+  padding-top: 50px;
 }
