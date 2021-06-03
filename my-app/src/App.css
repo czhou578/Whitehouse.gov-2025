@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Roboto&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -62,7 +64,7 @@ body {
 }
 
 .internet-controls {
-  margin-top: 250px;
+  margin-top: 200px;
   background-color: black;
 }
 
@@ -243,21 +245,15 @@ h1 {
   width: 400px;
 }
 
-#panel-1 img {
-  height: 300px;
-  width: 400px;
-}
-
-#panel-2 img {
+#panel-1 img, #panel-2 img, #panel-4 img {
   height: 300px;
   width: 470px;
+  border-radius: 10px;
 
 }
 
-#panel-4 img{
-  height: 200px;
-  width: 350px;
-
+#panel-1 p, #panel-2 p, #panel-4 p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .econ-descript {
