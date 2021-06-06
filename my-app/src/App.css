@@ -141,7 +141,7 @@ body {
   height: 90vh;
 }
 
-.economy > div > h1 {
+.economy > div > div > h1 {
   padding-top: 20px;
   color: black;
   margin-left: 40%;
@@ -197,7 +197,7 @@ li {
 
 .vertical-econList {
   position: relative;
-  margin-left: 55%;
+  margin-left: 60%;
 }
 
 .econ-topics {
@@ -221,11 +221,6 @@ li {
 .econ-topics:hover:before {
   border: 2px solid rgb(57, 57, 209);
 }
-
-/* .econ-topics:focus {
-  color: rgb(57, 57, 209);
-
-} */
 
 h1 {
   font-family: Lato,sans-serif;
@@ -254,6 +249,8 @@ h1 {
 
 #panel-1 p, #panel-2 p, #panel-4 p {
   font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 450;
 }
 
 .econ-descript {
