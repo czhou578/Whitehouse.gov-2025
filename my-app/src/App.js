@@ -10,6 +10,7 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Healthcare from './Healthcare';
 import PieChart from './PieChart'
 import Speech from './Speeches'
+import HorizontalBarChart from './HorizontalBarChart'
 
 
 function App() {
@@ -100,6 +101,9 @@ function App() {
           <div>
             <h1 class="title">Economy And Finance</h1>
             <div className="line"></div>
+          </div>
+          <div className="barCharts">
+            <HorizontalBarChart />
           </div>
           <div className="vertical-econList">
             <div className="econ-panel">
