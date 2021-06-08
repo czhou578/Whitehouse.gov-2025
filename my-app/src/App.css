@@ -232,6 +232,11 @@ h1 {
   margin-left: 500px;
 }
 
+.barCharts {
+  height: 500px;
+  width: 1000px;
+}
+
 .econ-panel {
   position: absolute;
   right: 120%;

@@ -8,9 +8,8 @@ import FPolicy from './FPolicy'
 import React, { Component, useEffect, useRef, useState } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Healthcare from './Healthcare';
-import PieChart from './PieChart'
 import Speech from './Speeches'
-import HorizontalBarChart from './HorizontalBarChart'
+import BarChart from './HBarChart'
 
 
 function App() {
@@ -103,7 +102,7 @@ function App() {
             <div className="line"></div>
           </div>
           <div className="barCharts">
-            <HorizontalBarChart />
+            <BarChart />
           </div>
           <div className="vertical-econList">
             <div className="econ-panel">
@@ -186,7 +185,6 @@ function App() {
         <h1 class="title">Budget Overview</h1>
         <div className="line"></div>
         <div className="chart">
-          <PieChart />
         </div>
 
       </section>
