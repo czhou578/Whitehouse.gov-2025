@@ -46,6 +46,8 @@ const data = [
   },
 ];
 
+
+
 export default class Example extends PureComponent {
   static demoUrl = 'https://codesandbox.io/s/dashed-line-chart-dxwzg';
 
@@ -55,7 +57,7 @@ export default class Example extends PureComponent {
         <LineChart
           width={500}
           height={400}
-          data={data}
+          data={this.props.data}
           margin={{
             top: 5,
             right: 30,
@@ -65,7 +67,7 @@ export default class Example extends PureComponent {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
-          <YAxis />
+          <YAxis ticks={this.props.YAxis}/>
           <Tooltip />
           <Legend />
           <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeDasharray="5 5" />
