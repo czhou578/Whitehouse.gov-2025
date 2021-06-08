@@ -44,9 +44,6 @@ export default function NestedGrid() {
             <time>April 12, 2027</time>  
           </Paper>
         </Grid>
-        {/* <Grid item xs={4}>
-          <Paper className={classes.paper}>item</Paper>
-        </Grid> */}
       </React.Fragment>
     );
   }

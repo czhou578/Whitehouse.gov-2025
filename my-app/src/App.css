@@ -133,12 +133,12 @@ body {
   position: relative;
   margin-top: 50px;
   width: 100vw;
-  height: 85vh;
+  height: 145vh;
 }
 
 .econ-wrap {
   background-image: linear-gradient(white, lightBlue);
-  height: 90vh;
+  height: 145vh;
 }
 
 .economy > div > div > h1 {
@@ -231,8 +231,19 @@ h1 {
   margin-left: 500px;
 }
 
-.barCharts {
+.chart-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.barChart {
   height: 300px;
+  width: 400px;
+}
+
+.lineChart {
+  height: 335px;
   width: 400px;
 }
 

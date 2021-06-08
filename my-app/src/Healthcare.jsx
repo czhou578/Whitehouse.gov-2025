@@ -2,7 +2,6 @@ import React from 'react';
 import './Infocard.css'
 import { makeStyles } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
-import './Healthcare.css'
 import HorizonTab from './HorizontalTab'
 
 const styles = {
