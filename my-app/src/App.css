@@ -168,7 +168,6 @@ li {
 
 .healthcare {
   background-color: black;
-  /* background-image: linear-gradient(lightBlue, white); */
 }
 
 .healthcare > h1 {
@@ -233,8 +232,8 @@ h1 {
 }
 
 .barCharts {
-  height: 500px;
-  width: 1000px;
+  height: 300px;
+  width: 400px;
 }
 
 .econ-panel {
