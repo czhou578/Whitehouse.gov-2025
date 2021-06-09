@@ -11,6 +11,7 @@ import Healthcare from './Healthcare';
 import Speech from './Speeches'
 import BarChart from './HBarChart'
 import LineChart from './HLineChart'
+import ChartDescription from './ChartDescription'
 
 
 function App() {
@@ -152,9 +153,11 @@ function App() {
           <div className="chart-wrapper">
             <div className="barChart">
               <BarChart />
+              <ChartDescription title="Demo Data 1"/>
             </div>
             <div className="lineChart">
               <LineChart data={inflationData} yVal={YAxis}/>
+              <ChartDescription />
             </div>
           </div>
           <div className="vertical-econList">
