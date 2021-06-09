@@ -82,7 +82,7 @@ function App() {
     },
   ];
 
-  const YAxis = [1, 2, 3, 4]
+  const YAxis = [0, 10]
 
 
 
@@ -153,11 +153,16 @@ function App() {
           <div className="chart-wrapper">
             <div className="barChart">
               <BarChart />
-              <ChartDescription title="Demo Data 1"/>
+              <ChartDescription title={"Healthy"} description={
+                `demo`
+              } className="chart-descrip"/>
             </div>
             <div className="lineChart">
               <LineChart data={inflationData} yVal={YAxis}/>
-              <ChartDescription />
+              <ChartDescription title={"Inflation Chart"} description={
+                `We have met our annual inflation goals thanks to
+                effective cooperation with the Federal Reserve`
+              }/>
             </div>
           </div>
           <div className="vertical-econList">

@@ -67,7 +67,7 @@ export default class Example extends PureComponent {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
-          <YAxis ticks={this.props.YAxis}/>
+          <YAxis type="number" domain={[0, 1000]}/>
           <Tooltip />
           <Legend />
           <Line type="monotone" dataKey="pv" stroke="#8884d8" strokeDasharray="5 5" />

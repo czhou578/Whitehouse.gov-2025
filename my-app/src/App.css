@@ -242,6 +242,10 @@ h1 {
   width: 400px;
 }
 
+.barChart > .chart-descrip {
+  margin-left: 500px;
+}
+
 .lineChart {
   height: 335px;
   width: 500px;
