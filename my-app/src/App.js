@@ -81,7 +81,7 @@ function App() {
     },
   ];
 
-  const YAxis = [1,2,3,4]
+  const YAxis = [1, 2, 3, 4]
 
 
 
