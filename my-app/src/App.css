@@ -249,7 +249,12 @@ h1 {
 .lineChart {
   height: 335px;
   width: 500px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  margin-top: -50px;
 }
+
+
 
 .econ-panel {
   position: absolute;

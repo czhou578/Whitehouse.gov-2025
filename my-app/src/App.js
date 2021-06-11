@@ -153,16 +153,17 @@ function App() {
           <div className="chart-wrapper">
             <div className="barChart">
               <BarChart />
-              <ChartDescription title={"Healthy"} description={
-                `demo`
+              <ChartDescription title={"Healthy Growth"} description={
+                `Our economy is growing and producing new
+                jobs year by year`
               } className="chart-descrip"/>
             </div>
             <div className="lineChart">
-              <LineChart data={inflationData} yVal={YAxis}/>
+              <LineChart />
               <ChartDescription title={"Inflation Chart"} description={
                 `We have met our annual inflation goals thanks to
                 effective cooperation with the Federal Reserve`
-              }/>
+              } id="line-descrip"/>
             </div>
           </div>
           <div className="vertical-econList">
