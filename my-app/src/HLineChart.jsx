@@ -6,6 +6,10 @@ export default function HLineChart(props) {
 
   <VictoryChart
     theme={VictoryTheme.material}
+    animate={{
+      duration: 2000,
+      onLoad: { duration: 1000 }
+    }}
   >
     <VictoryLine
       style={{

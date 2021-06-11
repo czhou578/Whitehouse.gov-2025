@@ -16,6 +16,10 @@ export default class HBarChart extends React.Component {
         // domainPadding will add space to each side of VictoryBar to
         // prevent it from overlapping the axis
         domainPadding={20}
+        animate={{
+          duration: 2000,
+          onLoad: { duration: 1000 }
+        }}
       >
         <VictoryAxis
           // tickValues specifies both the number of ticks and where
