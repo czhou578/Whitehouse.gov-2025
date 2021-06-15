@@ -11,6 +11,7 @@ import Speech from './Speeches'
 import BarChart from './HBarChart'
 import LineChart from './HLineChart'
 import ChartDescription from './ChartDescription'
+import PieChart from './PieChart'
 
 
 function App() {
@@ -227,7 +228,7 @@ function App() {
         <Healthcare className="health"/>
         <div className="cross-wrap-outer">
           <div className="cross-wrap">
-
+              <PieChart />
           </div>
         </div>
 
