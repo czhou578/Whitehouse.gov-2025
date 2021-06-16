@@ -222,16 +222,13 @@ function App() {
       <section className="healthcare">
         <h1 class="title">Health and Fitness</h1>
         <div className="line"></div>
-
-        <InfoCard />
-
-        <Healthcare className="health"/>
         <div className="cross-wrap-outer">
           <div className="cross-wrap">
               <PieChart />
           </div>
         </div>
-
+        <InfoCard />
+        <Healthcare className="health"/>
       </section>
       <section className="foreign-policy">
         <h1 class="title">Foreign Policy / Cooperation</h1>
