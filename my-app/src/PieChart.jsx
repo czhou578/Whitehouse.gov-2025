@@ -6,9 +6,11 @@ export default class PieChart extends React.Component {
   render() {
     return (
       <VictoryPie
-        width={400}
-
-        style={{
+      height={400}
+      width={400}
+      standlone={false}
+      padding={{ top: -200, bottom: -90 }}
+      style={{
           data: {
             fillOpacity: 0.9, stroke: "#c43a31", strokeWidth: 3
           },
