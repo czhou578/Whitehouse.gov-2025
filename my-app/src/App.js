@@ -12,7 +12,9 @@ import BarChart from './HBarChart'
 import LineChart from './HLineChart'
 import ChartDescription from './ChartDescription'
 import PieChart from './PieChart'
-
+import { PropTypes } from '@material-ui/core';
+import FPCard from './FPCard'
+import BudgetPieChart from './BudgetPieChart';
 
 function App() {
 
@@ -83,8 +85,6 @@ function App() {
   ];
 
   const YAxis = [0, 10]
-
-
 
   useEffect(() => {
     cycleEconPanels();
@@ -226,19 +226,28 @@ function App() {
           <div className="cross-wrap">
               <PieChart />
           </div>
+        {/* <InfoCard /> */}
         </div>
-        <InfoCard />
-        <Healthcare className="health"/>
+        <div className="table-health">
+          <Healthcare className="health"/>
+        </div>
       </section>
       <section className="foreign-policy">
         <h1 class="title">Foreign Policy / Cooperation</h1>
         <div className="line"></div>
+        <div id="diplomacy-img">
+          <img src="https://uscpublicdiplomacy.org/sites/default/files/styles/blog-785x482/public/uploads/iStock-1265704329.jpeg.jpg?itok=04LhN-8w"></img>
+        </div>
+        <div class="card-grid">
+            <FPCard />
+        </div>
         {/* <FPolicy /> */}
       </section>
       <section className="budget">
         <h1 class="title">Budget Overview</h1>
         <div className="line"></div>
         <div className="chart">
+          <BudgetPieChart />
         </div>
 
       </section>

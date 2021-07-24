@@ -13,8 +13,20 @@ const cardStyle = {
   backgroundColor: 'lightTan',
   height: '200px',
   width: '200px',
-  borderRadius: '10px'
+  borderRadius: '10px',
+  color: 'white',
+  marginLeft: '50px'
 
+}
+
+const flex = {
+  display: 'flex',
+  marginLeft: '500px'
+}
+
+const top = {
+  position: 'relative',
+  top: '100px'
 }
 
 const cardDescript = {
@@ -39,18 +51,13 @@ export default function Healthcare() {
 
   return (
     <div className="wrapper" style={styles}>
-      <div className="displaycards">
-        <Card title="Healthcare Access" children={cardDescript.firstDescript}></Card>
-        <Card title="Drug Pricing" children={cardDescript.secondDescript}></Card>
+      <div className="displaycards" style={flex}>
+        <Card title="Healthcare Access" children={cardDescript.firstDescript} style={cardStyle}></Card>
+        <Card title="Drug Pricing" children={cardDescript.secondDescript} style={cardStyle}></Card>
       </div>
-      <div className="list-wrap">
+      <div className="list-wrap" style={top}>
         <HorizonTab />
-        {/* <ul>
-          {listItems}
-        </ul> */}
-
       </div>
-
     </div>
   )
 }

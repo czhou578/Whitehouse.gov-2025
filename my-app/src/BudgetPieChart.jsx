@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { VictoryPie } from 'victory';
 
 
-export default class PieChart extends React.Component {
+export default class BudgetPieChart extends React.Component {
   render() {
     return (
       <VictoryPie
@@ -18,11 +18,17 @@ export default class PieChart extends React.Component {
             fontSize: 25, fill: "#c43a31"
           }
         }}
-        colorScale={["tomato", "orange", "gold", "cyan", "navy" ]}
+        colorScale={["tomato", "orange", "gold", "cyan", "navy", "red", "blue", "green" ]}
         data={[
           { x: "Underweight", y: 35 },
           { x: "Overweight", y: 40 },
-          { x: "Normal", y: 55 }
+          { x: "Normal", y: 10 },
+          { x: "Normal2", y: 10 },
+          { x: "Normal3", y: 5 },
+          { x: "Normal4", y: 55 },
+          { x: "Normal5", y: 355 },
+          { x: "Normal6", y: 45 }
+
         ]}
       />
 

@@ -166,7 +166,13 @@ li {
   word-wrap: break-word;
 }
 
+.health {
+  bottom: 200px;
+}
+
 .healthcare {
+  position: relative;
+  padding-bottom: 500px;
   background-color: black;
 }
 
@@ -175,23 +181,30 @@ li {
   color: aqua;
 }
 
+.table-health {
+  position: absolute;
+  left: 70px;
+  bottom: 250px;
+}
+
 .environment {
   margin-top: 200px;
 }
 
 .foreign-policy {
   margin-top: 200px;
-
 }
 
 .cross-wrap-outer {
-  margin-left: 300px;
+  margin-left: 200px;
   margin-top: 70px;
+  height: 200px;
 }
 
 .cross-wrap {
-  height: 100px;
-  width: 100px;
+  margin-top: 20px;
+  height: 300px;
+  width: 350px;
 } 
 
 .vertical-econList {
@@ -302,7 +315,29 @@ h1 {
   background-color: black;
 }
 
+@media all and (max-width: 800px) {
+  .foreign-policy {
+    color: lightblue;
+
+  }
+}
+
 .foreign-policy h1 {
   color: white;
   padding-top: 50px;
+}
+
+.popup-test {
+  margin-left: 100px;
+}
+
+#p1 {
+  margin-left: 500px;
+}
+
+#diplomacy-img > img {
+  margin-top: 50px;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
 }
