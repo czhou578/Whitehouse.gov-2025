@@ -1,6 +1,6 @@
 import './App.scss';
 import './Taskbar.css'
-import './Infocard.css'
+import './Infocard.scss'
 import Taskbar from './Taskbar'
 import InfoCard from './Infocard'
 import FPolicy from './FPolicy'

@@ -1,6 +1,8 @@
+$color: black;
+
 
 .description {
-  color: black;
+  color: $color;
   font-size: 13px;
   max-width: 150px;
   white-space: normal;
@@ -8,7 +10,7 @@
 }
 
 .headers {
-  color: black;
+  color: $color;
   font-size: 20px;
 }
 
@@ -23,20 +25,28 @@
   cursor: pointer;
 }
 
-#card-1, #card-2, #card-3, #card-4 {
+%sharedHeight {
   height: 200px;
+}
+
+#card-1, #card-2, #card-3, #card-4 {
+  @extend %sharedHeight;
+}
+
+%transitionEaseOut {
+  transition: 0.25s ease-in-out;
 }
 
 #card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover {
   box-shadow: 5px 10px rgb(115, 112, 141);
   transform: translateZ(16);
   background-color: aliceblue;
-  transition: 0.25s ease-in-out;
+  @extend %transitionEaseOut;
   will-change: transform;
 }
 
 #card-1:not(:hover), #card-2:not(:hover), #card-3:not(:hover), #card-4:not(:hover) {
   box-shadow: 0px;
-  transition: 0.25s ease-out;
+  @extend %transitionEaseOut;
 }
 

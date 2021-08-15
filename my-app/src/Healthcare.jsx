@@ -1,5 +1,5 @@
 import React from 'react';
-import './Infocard.css'
+import './Infocard.scss'
 import { makeStyles } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import HorizonTab from './HorizontalTab'
