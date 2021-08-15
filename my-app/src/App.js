@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import './Taskbar.css'
 import './Infocard.css'
 import Taskbar from './Taskbar'
