@@ -12,9 +12,9 @@ import BarChart from './HBarChart'
 import LineChart from './HLineChart'
 import ChartDescription from './ChartDescription'
 import PieChart from './PieChart'
-import { PropTypes } from '@material-ui/core';
 import FPCard from './FPCard'
 import BudgetPieChart from './BudgetPieChart';
+import CustomTheme from './CustomTheme';
 
 function App() {
 
@@ -164,6 +164,9 @@ function App() {
                 `We have met our annual inflation goals thanks to
                 effective cooperation with the Federal Reserve`
               } id="line-descrip"/>
+            </div>
+            <div className="customChart">
+              <CustomTheme />
             </div>
           </div>
           <div className="vertical-econList">

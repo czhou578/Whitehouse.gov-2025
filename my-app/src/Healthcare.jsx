@@ -7,7 +7,6 @@ import { Container } from 'semantic-ui-react'
 
 
 const styles = {
-  // backgroundColor: '#2836a1',
   display: 'inline-block',
 }
 
