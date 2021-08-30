@@ -16,6 +16,7 @@ import FPCard from "./FPCard";
 import BudgetPieChart from "./BudgetPieChart";
 import CustomTheme from "./CustomTheme";
 import { Grid, Image, Rail, Segment } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react'
 
 
 function App() {
@@ -284,7 +285,7 @@ function App() {
           <img src="https://uscpublicdiplomacy.org/sites/default/files/styles/blog-785x482/public/uploads/iStock-1265704329.jpeg.jpg?itok=04LhN-8w"></img>
         </div>
         <div class="card-grid">
-          <FPCard />
+          <FPolicy />
         </div>
         {/* <FPolicy /> */}
       </section>
