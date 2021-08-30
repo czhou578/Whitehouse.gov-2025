@@ -15,6 +15,8 @@ import PieChart from "./PieChart";
 import FPCard from "./FPCard";
 import BudgetPieChart from "./BudgetPieChart";
 import CustomTheme from "./CustomTheme";
+import { Grid, Image, Rail, Segment } from 'semantic-ui-react'
+
 
 function App() {
   function cycleEconPanels() {
@@ -96,7 +98,7 @@ function App() {
           <img src="https://i2.wp.com/media.nbcboston.com/2019/09/tlmd-efe-andrew-yang-matematics.jpg?fit=900%2C506&quality=85&resize=1200%2C675&strip=all&ssl=1"></img>
         </div>
         <div className="head-title">
-          Welcome to the <br></br> 2027 American Scorecard
+          Welcome to the <br></br> <br></br> 2027 American Scorecard
           <div className="title-descript">
             Check out our annual report below
             <div className="down-arrow">
