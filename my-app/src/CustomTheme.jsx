@@ -10,6 +10,7 @@ export default class CustomTheme extends React.Component {
         theme={VictoryTheme.material}
         domainPadding={{ x: 25 }}
         scale={{ x: "time" }}
+        
       >
       <VictoryAxis tickFormat={(t) => `${t.getDate()}/${t.getMonth()}`}/>
       <VictoryAxis dependentAxis/>
@@ -22,11 +23,13 @@ export default class CustomTheme extends React.Component {
           {x: new Date(2016, 6, 4), open: 20, close: 10, high: 25, low: 7},
           {x: new Date(2016, 6, 5), open: 10, close: 8, high: 15, low: 5}
         ]}
+        animate={{
+          duration: 2000,
+          onLoad: { duration: 1000 }
+        }}
       />
       </VictoryChart>
 
-    )
-    
+    )   
   }
-
 }

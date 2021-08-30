@@ -141,7 +141,7 @@ body {
   position: relative;
   margin-top: 50px;
   width: 100vw;
-  height: 145vh;
+  height: 115vh;
 }
 
 .econ-wrap {
@@ -240,6 +240,11 @@ li {
 
 .econ-topics:hover:before {
   border: 2px solid rgb(57, 57, 209);
+}
+
+.customChart {
+  margin-top: -100px;
+  height: 400px;
 }
 
 h1 {

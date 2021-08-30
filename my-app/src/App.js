@@ -1,94 +1,92 @@
-import './App.scss';
-import './Taskbar.css'
-import './Infocard.scss'
-import Taskbar from './Taskbar'
-import InfoCard from './Infocard'
-import FPolicy from './FPolicy'
-import React, { Component, useEffect, useRef, useState } from 'react';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import Healthcare from './Healthcare';
-import Speech from './Speeches'
-import BarChart from './HBarChart'
-import LineChart from './HLineChart'
-import ChartDescription from './ChartDescription'
-import PieChart from './PieChart'
-import FPCard from './FPCard'
-import BudgetPieChart from './BudgetPieChart';
-import CustomTheme from './CustomTheme';
+import "./App.scss";
+import "./Taskbar.css";
+import "./Infocard.scss";
+import Taskbar from "./Taskbar";
+import InfoCard from "./Infocard";
+import FPolicy from "./FPolicy";
+import React, { Component, useEffect, useRef, useState } from "react";
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
+import Healthcare from "./Healthcare";
+import Speech from "./Speeches";
+import BarChart from "./HBarChart";
+import LineChart from "./HLineChart";
+import ChartDescription from "./ChartDescription";
+import PieChart from "./PieChart";
+import FPCard from "./FPCard";
+import BudgetPieChart from "./BudgetPieChart";
+import CustomTheme from "./CustomTheme";
 
 function App() {
-
   function cycleEconPanels() {
-    const econTopics = document.querySelectorAll('.econ-topics')
-    const econPanelDetail = document.querySelectorAll('.econ-panel-detail')
+    const econTopics = document.querySelectorAll(".econ-topics");
+    const econPanelDetail = document.querySelectorAll(".econ-panel-detail");
     let firstClick = false;
     for (let i = 0; i < econTopics.length; i++) {
       firstClick = true;
 
-      econTopics[i].addEventListener('click', function() {
-      econPanelDetail[i].removeAttribute("hidden")
-      econTopics[i].style.color = 'blue'
-      for (let j = 0; j < econTopics.length; j++) {
-        if (j != i) {
-          econTopics[j].style.color = 'black'
-          econPanelDetail[j].setAttribute("hidden", "true");
+      econTopics[i].addEventListener("click", function () {
+        econPanelDetail[i].removeAttribute("hidden");
+        econTopics[i].style.color = "blue";
+        for (let j = 0; j < econTopics.length; j++) {
+          if (j != i) {
+            econTopics[j].style.color = "black";
+            econPanelDetail[j].setAttribute("hidden", "true");
+          }
         }
-      }
-    })
-
+      });
     }
   }
 
   const inflationData = [
     {
-      name: '2021',
+      name: "2021",
       uv: 4000,
       pv: 2400,
       amt: 2400,
     },
     {
-      name: '2022',
+      name: "2022",
       uv: 3000,
       pv: 1398,
       amt: 2210,
     },
     {
-      name: '2023',
+      name: "2023",
       uv: 2000,
       pv: 9800,
       amt: 2290,
     },
     {
-      name: '2024',
+      name: "2024",
       uv: 2780,
       pv: 3908,
       amt: 2000,
     },
     {
-      name: '2025',
+      name: "2025",
       uv: 1890,
       pv: 4800,
       amt: 2181,
     },
     {
-      name: '2026',
+      name: "2026",
       uv: 2390,
       pv: 3800,
       amt: 2500,
     },
     {
-      name: '2027',
+      name: "2027",
       uv: 3490,
       pv: 4300,
       amt: 2100,
     },
   ];
 
-  const YAxis = [0, 10]
+  const YAxis = [0, 10];
 
   useEffect(() => {
     cycleEconPanels();
-  })
+  });
 
   return (
     <div id="body">
@@ -118,23 +116,29 @@ function App() {
       </section>
       <section className="internet-controls">
         <div>
-          <h1 class="title" id="internet">Internet Controls and Cyberspace</h1>
+          <h1 class="title" id="internet">
+            Internet Controls and Cyberspace
+          </h1>
           <div className="line"></div>
         </div>
         <div className="display-cards">
           <div className="info-wrap">
             <div className="info">
-              <InfoCard title="Big Tech" msg="first-par" className="card"/>
+              <InfoCard title="Big Tech" msg="first-par" className="card" />
             </div>
           </div>
           <div className="info-wrap">
-            <InfoCard title="Privacy Concerns" msg="second-par" className="card"/>
+            <InfoCard
+              title="Privacy Concerns"
+              msg="second-par"
+              className="card"
+            />
           </div>
           <div className="info-wrap">
-            <InfoCard title="Cybersecurity" msg="third-par" className="card"/>
+            <InfoCard title="Cybersecurity" msg="third-par" className="card" />
           </div>
           <div className="info-wrap">
-            <InfoCard title="Tech Ethics" msg="fourth-par" className="card"/>
+            <InfoCard title="Tech Ethics" msg="fourth-par" className="card" />
           </div>
         </div>
         <div className="img-container">
@@ -144,7 +148,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="economy"> 
+      <section className="economy">
         <div class="econ-wrap">
           <div>
             <h1 class="title">Economy And Finance</h1>
@@ -153,67 +157,88 @@ function App() {
           <div className="chart-wrapper">
             <div className="barChart">
               <BarChart />
-              <ChartDescription title={"Healthy Growth"} description={
-                `Our economy is growing and producing new
-                jobs year by year`
-              } className="chart-descrip"/>
+              <ChartDescription
+                title={"Healthy Growth"}
+                description={`Our economy is growing and producing new
+                jobs year by year`}
+                className="chart-descrip"
+              />
             </div>
             <div className="lineChart">
               <LineChart />
-              <ChartDescription title={"Inflation Chart"} description={
-                `We have met our annual inflation goals thanks to
-                effective cooperation with the Federal Reserve`
-              } id="line-descrip"/>
+              <ChartDescription
+                title={"Inflation Chart"}
+                description={`We have met our annual inflation goals thanks to
+                effective cooperation with the Federal Reserve`}
+                id="line-descrip"
+              />
             </div>
             <div className="customChart">
               <CustomTheme />
+              <ChartDescription
+                title={"Stock Market"}
+                description={`The stock markets are at record highs, thanks to
+                our sustainable and circular flow of money`}
+                id="line-descrip"
+              />
             </div>
           </div>
           <div className="vertical-econList">
             <div className="econ-panel">
-              <div id="panel-1" className="econ-panel-detail" >
+              <div id="panel-1" className="econ-panel-detail">
                 <div className="econ-descript">
                   <div>
                     <img src="https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2021/03/printing-money.jpg?quality=80&strip=all&ssl=1"></img>
                   </div>
-                  <p>We have set up a People's Bank, in order to make money more accessible for others. This allows for <br></br>
-                    easy transfer of money through federal stimulus, and makes sure that even in impoverished areas, money <br></br>
+                  <p>
+                    We have set up a People's Bank, in order to make money more
+                    accessible for others. This allows for <br></br>
+                    easy transfer of money through federal stimulus, and makes
+                    sure that even in impoverished areas, money <br></br>
                     can be easily transferred and accessed.
                   </p>
                 </div>
               </div>
-              <div id="panel-2" className="econ-panel-detail" hidden >
+              <div id="panel-2" className="econ-panel-detail" hidden>
                 <div className="econ-descript">
                   <div>
                     <img src="https://youmatter.world/app/uploads/sites/2/2019/11/robot-automation-jobs.jpg"></img>
                   </div>
-                  <p>Automation is a new challenge that is facing America. It will unleash a wave of displacement that
-                    has been unseen for hundreds of years. The administration is actively finding ways to support workers
-                    that would otherwise suffer during this massive increase in productivity. We need to reap the rewards
-                    of our progress.
+                  <p>
+                    Automation is a new challenge that is facing America. It
+                    will unleash a wave of displacement that has been unseen for
+                    hundreds of years. The administration is actively finding
+                    ways to support workers that would otherwise suffer during
+                    this massive increase in productivity. We need to reap the
+                    rewards of our progress.
                   </p>
                 </div>
               </div>
-              <div id="panel-3" className="econ-panel-detail" hidden >
+              <div id="panel-3" className="econ-panel-detail" hidden>
                 <div className="econ-descript">
-                  <p>Economic statistics are inportant for this administration's policies. We are actively cooperating
-                    with the Bureau of Labor Statistics to put together a weekly report of this country's economic state. 
-                    This will allow us to make better decisions. 
+                  <p>
+                    Economic statistics are inportant for this administration's
+                    policies. We are actively cooperating with the Bureau of
+                    Labor Statistics to put together a weekly report of this
+                    country's economic state. This will allow us to make better
+                    decisions.
                   </p>
                 </div>
               </div>
-              <div id="panel-4" className="econ-panel-detail" hidden >
+              <div id="panel-4" className="econ-panel-detail" hidden>
                 <div className="econ-descript">
                   <div>
                     <img src="https://wall-street.com/wp-content/uploads/2018/08/aug-1-header-pic.jpg"></img>
                   </div>
-                  <p>Cryptocurrencies have become more ubiquitous in our society, which ends up posing its own
-                    unique challenges. Look at how we are utilizing blockchain across this country to speed up transactions
-                    and applications, while carefully monitoring the crypto space for any violations and theft.
+                  <p>
+                    Cryptocurrencies have become more ubiquitous in our society,
+                    which ends up posing its own unique challenges. Look at how
+                    we are utilizing blockchain across this country to speed up
+                    transactions and applications, while carefully monitoring
+                    the crypto space for any violations and theft.
                   </p>
                 </div>
               </div>
-
             </div>
             <h5 className="econ-topics">People's Bank</h5> <br></br>
             <h5 className="econ-topics">Automation Progress </h5> <br></br>
@@ -225,14 +250,29 @@ function App() {
       <section className="healthcare">
         <h1 class="title">Health and Fitness</h1>
         <div className="line"></div>
+        <Grid centered columns={3}>
+          <Grid.Column>
+            <Segment>
+              <Image src="/images/wireframe/paragraph.png" />
+
+              <Rail dividing position="left">
+                <Segment>Left Rail Content</Segment>
+              </Rail>
+
+              <Rail dividing position="right">
+                <Segment>Right Rail Content</Segment>
+              </Rail>
+            </Segment>
+          </Grid.Column>
+        </Grid>
+
         <div className="cross-wrap-outer">
           <div className="cross-wrap">
-              <PieChart />
+            <PieChart />
           </div>
-        {/* <InfoCard /> */}
         </div>
         <div className="table-health">
-          <Healthcare className="health"/>
+          <Healthcare className="health" />
         </div>
       </section>
       <section className="foreign-policy">
@@ -242,7 +282,7 @@ function App() {
           <img src="https://uscpublicdiplomacy.org/sites/default/files/styles/blog-785x482/public/uploads/iStock-1265704329.jpeg.jpg?itok=04LhN-8w"></img>
         </div>
         <div class="card-grid">
-            <FPCard />
+          <FPCard />
         </div>
         {/* <FPolicy /> */}
       </section>
@@ -252,9 +292,7 @@ function App() {
         <div className="chart">
           <BudgetPieChart />
         </div>
-
       </section>
-  
     </div>
   );
 }
