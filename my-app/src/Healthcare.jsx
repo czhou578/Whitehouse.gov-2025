@@ -3,6 +3,8 @@ import './Infocard.scss'
 import { makeStyles } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import HorizonTab from './HorizontalTab'
+import { Container } from 'semantic-ui-react'
+
 
 const styles = {
   // backgroundColor: '#2836a1',
