@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Roboto&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -52,18 +52,15 @@ body {
   margin-top: 300px;
 }
 
-.speeches {
-  img {
-    height: 300px;
-    margin-left: 150px;
-    border-radius: 5px;
-
-  }
+.speeches img {
+  height: 300px;
+  margin-left: 150px;
+  border-radius: 5px;
 }
 
 .speeches .title {
   margin-left: 40%;
-  color: rgb(119, 119, 25);
+  color: #777719;
 }
 
 .internet-controls {
@@ -75,17 +72,16 @@ body {
   margin-bottom: 30px;
 }
 
-.internet-controls {
-  img {
-    width: 500px;
-    margin-left: 300px;
-    margin-bottom: 50px;
-    border-radius: 5px;
-
-  }
+.internet-controls img {
+  width: 500px;
+  margin-left: 300px;
+  margin-bottom: 50px;
+  border-radius: 5px;
 }
 
 .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -101,10 +97,8 @@ body {
   text-decoration: none;
 }
 
-.ai-link {
-  a {
-    font-size: 16px;
-  }
+.ai-link a {
+  font-size: 16px;
 }
 
 #internet {
@@ -113,6 +107,8 @@ body {
 }
 
 .display-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -123,8 +119,8 @@ body {
 
 .info {
   display: inline-block;
-  
 }
+
 .down-arrow {
   margin-top: 10px;
 }
@@ -145,6 +141,7 @@ body {
 }
 
 .econ-wrap {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(lightBlue));
   background-image: linear-gradient(white, lightBlue);
   height: 145vh;
 }
@@ -209,6 +206,8 @@ li {
 }
 
 .cross-wrap-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 50px;
   margin-top: 70px;
@@ -217,7 +216,7 @@ li {
 
 .cross-wrap {
   margin-top: 50px;
-} 
+}
 
 .cross-wrap > span {
   color: white;
@@ -242,15 +241,14 @@ li {
   position: absolute;
   left: -23px;
   border: 2px solid #876450;
-
 }
 
 .econ-topics:hover {
-  color: rgb(57, 57, 209);
+  color: #3939d1;
 }
 
 .econ-topics:hover:before {
-  border: 2px solid rgb(57, 57, 209);
+  border: 2px solid #3939d1;
 }
 
 .customChart {
@@ -270,8 +268,12 @@ h1 {
 
 .chart-wrapper {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .barChart {
@@ -295,6 +297,8 @@ h1 {
   position: absolute;
   right: 120%;
   display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 400px;
 }
@@ -303,7 +307,6 @@ h1 {
   height: 300px;
   width: 470px;
   border-radius: 10px;
-
 }
 
 #panel-1 p, #panel-2 p, #panel-4 p {
@@ -342,7 +345,6 @@ h1 {
 @media all and (max-width: 800px) {
   .foreign-policy {
     color: lightblue;
-
   }
 }
 
@@ -363,5 +365,7 @@ h1 {
   margin-top: 50px;
   height: 400px;
   width: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+/*# sourceMappingURL=App.css.map */

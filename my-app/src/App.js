@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./App.css";
 import "./Taskbar.css";
 import "./Infocard.scss";
 import Taskbar from "./Taskbar";
@@ -253,41 +253,61 @@ function App() {
       <section className="healthcare">
         <h1 class="title">Health and Fitness</h1>
         <div className="line"></div>
-        <Grid centered columns={3}>
-          <Grid.Column>
-            <Segment>
-              <Image src="/images/wireframe/paragraph.png" />
+        <div id="three-column">
+          <Grid centered columns={3}>
+            <Grid.Column>
+              <Segment>
+              Eight years ago, I had just sold my education company and married my wife, Evelyn. The country was struggling through the aftermath of the financial crisis, so I made it my mission to bring jobs back to the communities that were hit hardest. I saw firsthand how many of our children didn’t see economic opportunity at home and were moving away to the same cities. That’s why I founded Venture for America (VFA), an organization dedicated to rejuvenating local economies. By helping entrepreneurs create jobs in cities like Baltimore, Detroit, Pittsburgh, and Cleveland, we could create strong economies throughout the country and give children a reason to stay.
 
-              <Rail dividing position="left">
-                <Segment>Left Rail Content</Segment>
-              </Rail>
+In its first year, VFA trained 40 Fellows; by 2017, more than 500 VFA Fellows and alumni had launched dozens of companies and helped create thousands of jobs across the country. The Obama White House even named me a Champion of Change in 2012 and a Presidential Ambassador for Global Entrepreneurship in 2015.
 
-              <Rail dividing position="right">
-                <Segment>Right Rail Content</Segment>
-              </Rail>
-            </Segment>
-          </Grid.Column>
-        </Grid>
+Despite the success I saw with VFA, as I worked in these cities, I came to a terrible realization: automation is destroying jobs, and entire regions are being left behind. For years, I believed new business formation was the answer—if we could train a new generation of entrepreneurs and create the right jobs in the right places, we could stop the downward spiral of growing income inequality, poverty, unemployment, and hopelessness.
+                <Rail dividing position="left">
+                  <Segment>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    
+                  </Segment>
+                </Rail>
+
+                <Rail dividing position="right">
+                  <Segment>
+                  Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum', a 1st century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+                  </Segment>
+                </Rail>
+              </Segment>
+            </Grid.Column>
+          </Grid>
+
+        </div>
 
         <div className="cross-wrap-outer">
           <div className="cross-wrap">
-            <PieChart />
+            <span> National Weight Chart </span>
+            <PieChart msg="weight-chart"/>
+          </div>
+          <div className="cross-wrap">
+            <span> National Height Chart </span>
+            <PieChart msg="height-chart"/>
+          </div>
+          <div className="cross-wrap">
+            <span> Calorie Intake Chart </span>
+            <PieChart msg="calorie-chart"/>
           </div>
         </div>
-        <div className="table-health">
+        {/* <div className="table-health">
           <Healthcare className="health" />
-        </div>
+        </div> */}
       </section>
       <section className="foreign-policy">
-        <h1 class="title">Foreign Policy / Cooperation</h1>
-        <div className="line"></div>
-        <div id="diplomacy-img">
-          <img src="https://uscpublicdiplomacy.org/sites/default/files/styles/blog-785x482/public/uploads/iStock-1265704329.jpeg.jpg?itok=04LhN-8w"></img>
-        </div>
-        <div class="card-grid">
-          <FPolicy />
-        </div>
-        {/* <FPolicy /> */}
+          <h1 class="title">Foreign Policy / Cooperation</h1>
+          <div className="line"></div>
+          <div>
+            <img src="https://uscpublicdiplomacy.org/sites/default/files/styles/blog-785x482/public/uploads/iStock-1265704329.jpeg.jpg?itok=04LhN-8w"></img>
+          </div>
+          <div class="card-grid">
+            <FPolicy />
+          </div>
       </section>
       <section className="budget">
         <h1 class="title">Budget Overview</h1>
