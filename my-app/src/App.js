@@ -278,9 +278,7 @@ Despite the success I saw with VFA, as I worked in these cities, I came to a ter
               </Segment>
             </Grid.Column>
           </Grid>
-
         </div>
-
         <div className="cross-wrap-outer">
           <div className="cross-wrap">
             <span> National Weight Chart </span>
@@ -295,14 +293,11 @@ Despite the success I saw with VFA, as I worked in these cities, I came to a ter
             <PieChart msg="calorie-chart"/>
           </div>
         </div>
-        {/* <div className="table-health">
-          <Healthcare className="health" />
-        </div> */}
       </section>
       <section className="foreign-policy">
           <h1 class="title">Foreign Policy / Cooperation</h1>
           <div className="line"></div>
-          <div>
+          <div className="fop-pic">
             <img src="https://uscpublicdiplomacy.org/sites/default/files/styles/blog-785x482/public/uploads/iStock-1265704329.jpeg.jpg?itok=04LhN-8w"></img>
           </div>
           <div class="card-grid">

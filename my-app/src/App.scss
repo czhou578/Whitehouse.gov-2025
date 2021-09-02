@@ -180,7 +180,7 @@ li {
 
 .healthcare {
   position: relative;
-  padding-bottom: 350px;
+  padding-bottom: 450px;
   background-color: black;
 }
 
@@ -204,7 +204,7 @@ li {
 }
 
 .foreign-policy {
-  margin-top: 200px;
+  margin-top: 10px;
   height: 120vh;
 }
 
@@ -336,6 +336,7 @@ h1 {
 }
 
 .foreign-policy {
+  margin-bottom: 200px;
   background-color: black;
 }
 
@@ -349,6 +350,15 @@ h1 {
 .foreign-policy h1 {
   color: white;
   padding-top: 50px;
+}
+
+.fop-pic {
+  margin-top: 50px;
+}
+
+.fop-pic > img {
+  height: 350px;
+  width: 500px;
 }
 
 .popup-test {
