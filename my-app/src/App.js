@@ -4,19 +4,16 @@ import "./Infocard.scss";
 import Taskbar from "./Taskbar";
 import InfoCard from "./Infocard";
 import FPolicy from "./FPolicy";
-import React, { Component, useEffect, useRef, useState } from "react";
+import React, {useEffect} from "react";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
-import Healthcare from "./Healthcare";
 import Speech from "./Speeches";
 import BarChart from "./HBarChart";
 import LineChart from "./HLineChart";
 import ChartDescription from "./ChartDescription";
 import PieChart from "./PieChart";
-import FPCard from "./FPCard";
 import BudgetPieChart from "./BudgetPieChart";
 import CustomTheme from "./CustomTheme";
 import { Grid, Image, Rail, Segment } from 'semantic-ui-react'
-import { Card } from 'semantic-ui-react'
 
 
 function App() {
@@ -84,8 +81,6 @@ function App() {
       amt: 2100,
     },
   ];
-
-  const YAxis = [0, 10];
 
   useEffect(() => {
     cycleEconPanels();
