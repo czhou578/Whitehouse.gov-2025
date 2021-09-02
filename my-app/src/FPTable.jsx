@@ -31,11 +31,11 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
+  createData('China', 159, 6.0, 24, 4.0),
+  createData('Russia', 237, 9.0, 37, 4.3),
+  createData('South America', 262, 16.0, 24, 6.0),
+  createData('EU', 305, 3.7, 67, 4.3),
+  createData('Africa', 356, 16.0, 49, 3.9),
 ];
 
 const useStyles = makeStyles({
@@ -52,11 +52,11 @@ export default function FPTable() {
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Dessert (100g serving)</StyledTableCell>
-            <StyledTableCell align="right">Calories</StyledTableCell>
-            <StyledTableCell align="right">Fat&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Carbs&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Protein&nbsp;(g)</StyledTableCell>
+            <StyledTableCell>Trade Revenue</StyledTableCell>
+            <StyledTableCell align="right">Debt Owed</StyledTableCell>
+            <StyledTableCell align="right">Cross Travel</StyledTableCell>
+            <StyledTableCell align="right">Flights</StyledTableCell>
+            <StyledTableCell align="right">Immigrants</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
