@@ -355,6 +355,7 @@ h1 {
 
 .fop-pic, .card-grid  {
   margin-top: 50px;
+  margin-left: 10px;
 }
 
 .fop-pic > img {
@@ -375,6 +376,7 @@ h1 {
   position: absolute;
   right: 150px;
   top: 600px;
+  border: 2px solid yellow;
 }
 
 .livestream > video {
@@ -395,4 +397,12 @@ h1 {
   height: 400px;
   width: 400px;
   object-fit: cover;
+}
+
+.budget > div {
+  margin-top: -200px;
+}
+
+.budget {
+  padding-bottom: 100px;
 }

@@ -310,8 +310,10 @@ Despite the success I saw with VFA, as I worked in these cities, I came to a ter
           </div>
       </section>
       <section className="budget">
-        <h1 class="title">Budget Overview</h1>
-        <div className="line"></div>
+        <div>
+          <h1 class="title">Budget Overview</h1>
+          <div className="line"></div>
+        </div>
         <div className="chart">
           <BudgetPieChart />
         </div>

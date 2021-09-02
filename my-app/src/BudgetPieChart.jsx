@@ -15,19 +15,19 @@ export default class BudgetPieChart extends React.Component {
             fillOpacity: 0.9, stroke: "#c43a31", strokeWidth: 3
           },
           labels: {
-            fontSize: 16, fill: "#c43a31"
+            fontSize: 16, fill: "#fffff"
           }
         }}
-        colorScale={["tomato", "orange", "gold", "cyan", "navy", "red", "blue", "green" ]}
+        colorScale={["tomato", "orange", "gold", "navy", "red", "blue", "green" ]}
         data={[
-          { x: "Underweight", y: 35 },
-          { x: "Overweight", y: 40 },
-          { x: "Normal", y: 10 },
-          { x: "Normal2", y: 10 },
-          { x: "Normal3", y: 5 },
-          { x: "Normal4", y: 55 },
-          { x: "Normal5", y: 45 },
-          { x: "Normal6", y: 45 }
+          { x: "Military Spending", y: 35 },
+          { x: "UBI", y: 40 },
+          { x: "Social Security", y: 10 },
+          { x: "Transit", y: 10 },
+          { x: "Disposable", y: 5 },
+          { x: "Infrastructure", y: 55 },
+          { x: "Education", y: 45 },
+          { x: "Healthcare", y: 45 }
 
         ]}
       />
