@@ -14,6 +14,7 @@ import PieChart from "./PieChart";
 import BudgetPieChart from "./BudgetPieChart";
 import CustomTheme from "./CustomTheme";
 import { Grid, Image, Rail, Segment } from 'semantic-ui-react'
+import FPTable from "./FPTable";
 
 
 function App() {
@@ -297,6 +298,15 @@ Despite the success I saw with VFA, as I worked in these cities, I came to a ter
           </div>
           <div class="card-grid">
             <FPolicy />
+            <FPolicy />
+          </div>
+          <div className="ftable">
+            <FPTable />
+          </div>
+          <div className="livestream">
+            <video height="240" width="320" controls>
+            <source src="https://www.youtube.com/watch?v=I-niLFoD7yw" type="video/mp4" />
+            </video>
           </div>
       </section>
       <section className="budget">

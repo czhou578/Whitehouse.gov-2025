@@ -23,6 +23,6 @@ const items = [
   
 ]
 
-const CardExampleGroupProps = () => <Card.Group items={items} itemsPerRow={2}/>
+const CardExampleGroupProps = () => <Card.Group items={items} itemsPerRow={7}/>
 
 export default CardExampleGroupProps
