@@ -17,6 +17,8 @@ import { Grid, Rail, Segment} from 'semantic-ui-react'
 import FPTable from "./FPTable";
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import PresidentsTable from "./PresidentsTable";
+import video from "../src/videoYang.mp4"
+// import video from './'
 
 const fetchData = () => {
   return fetch('https://raw.githubusercontent.com/hitch17/sample-data/master/presidents.json').then((data) => data.json()).then((data) => {
@@ -35,7 +37,7 @@ function App() {
   function cycleEconPanels() {
     const econTopics = document.querySelectorAll(".econ-topics");
     const econPanelDetail = document.querySelectorAll(".econ-panel-detail");
-    let firstClick = false;
+    let firstClick;
     for (let i = 0; i < econTopics.length; i++) {
       firstClick = true;
 
@@ -321,8 +323,8 @@ function App() {
                   <FPTable />
                 </div>
                 <div className="livestream">
-                  <video height="240" width="320" controls>
-                  <source src="https://www.youtube.com/watch?v=I-niLFoD7yw" type="video/mp4" />
+                  <video height="240" width="320" controls autoPlay>
+                    <source src={video} type="video/mp4" />
                   </video>
                 </div>
             </section>
