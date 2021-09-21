@@ -14,6 +14,7 @@ export default function PresidentsTable(props) {
     getData().then((data) => {
       console.log(data)
       setTableHeaders(Object.keys(data[0]))
+      setPresidentData(data)
     })
   }, [])
 
@@ -27,6 +28,15 @@ export default function PresidentsTable(props) {
             }) : null}
           </tr>
         </thead>
+        <tbody>
+          {presidentData.length != 0 ? presidentData.map((element, idx) => {
+            return <tr key={idx}>
+              {Object.values(element).map((element, idx) => {
+                return <td key={idx}>{element}</td>
+              })}
+            </tr>
+          }) : null}
+        </tbody>
       </table>
     </div>
   )
