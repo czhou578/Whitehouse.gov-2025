@@ -1,6 +1,5 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { VictoryPie } from 'victory';
-
 
 export default class PieChart extends React.Component {
   constructor(props) {

@@ -1,6 +1,5 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { VictoryPie } from 'victory';
-
 
 export default class BudgetPieChart extends React.Component {
   render() {

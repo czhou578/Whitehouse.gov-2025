@@ -1,5 +1,4 @@
-import React, { PureComponent } from 'react';
-import { VictoryBar, VictoryChart, VictoryTheme, VictoryLine } from 'victory';
+import { VictoryChart, VictoryTheme, VictoryLine } from 'victory';
 
 export default function HLineChart(props) {
   return (

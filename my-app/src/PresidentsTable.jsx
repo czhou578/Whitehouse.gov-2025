@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import './PresidentsTable.css'
-import Button from '@mui/material/Button';
 
 const getData = () => {
   return fetch('https://raw.githubusercontent.com/hitch17/sample-data/master/presidents.json').then((data) => data.json()).then((data) => {
@@ -33,7 +32,6 @@ export default function PresidentsTable(props) {
         <input type="text" placeholder="Search Names...." onChange={(e) => {
           setinputFieldValue(e.target.value)
         }} />
-        {/* <Button variant="contained" onClick={(e) => setinputFieldValue(e.target.value)}>Search</Button> */}
       </div>
     <div className="containerTable">
       <table>

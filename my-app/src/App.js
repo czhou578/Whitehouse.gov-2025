@@ -4,7 +4,7 @@ import "./Infocard.scss";
 import Taskbar from "./Taskbar";
 import InfoCard from "./Infocard";
 import FPolicy from "./FPolicy";
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import Speech from "./Speeches";
 import BarChart from "./HBarChart";
