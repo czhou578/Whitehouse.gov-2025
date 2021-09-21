@@ -15,7 +15,8 @@ import BudgetPieChart from "./BudgetPieChart";
 import CustomTheme from "./CustomTheme";
 import { Grid, Image, Rail, Segment, Container } from 'semantic-ui-react'
 import FPTable from "./FPTable";
-import {Router, Switch, Route} from "react-router"
+// import {Router, Switch, Route} from "react-router"
+import PresidentsTable from "./PresidentsTable";
 
 const fetchData = () => {
   return fetch('https://raw.githubusercontent.com/hitch17/sample-data/master/presidents.json').then((data) => data.json()).then((data) => {
@@ -101,8 +102,6 @@ function App() {
   });
 
   return (
-    <Router>
-
       <div id="body">
         <Taskbar />
         <section className="cover-splash">
@@ -335,11 +334,20 @@ function App() {
         </section>
         <section>
           <div className="linkToPresidents">
+            <PresidentsTable />
+
+            {/* <Switch>
+              <Route path="">
+                <PresidentsTable />
+              </Route>  
+            </Switch> */}
             <a>Check out All Previous Presidents</a>
           </div>
         </section>
       </div>
-    </Router>
+    // <Router>
+
+    // </Router>
   );
 }
 
