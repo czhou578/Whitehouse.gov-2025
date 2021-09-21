@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './PresidentsTable.css'
 
 const getData = () => {
   return fetch('https://raw.githubusercontent.com/hitch17/sample-data/master/presidents.json').then((data) => data.json()).then((data) => {
@@ -19,7 +20,7 @@ export default function PresidentsTable(props) {
   }, [])
 
   return (
-    <div>
+    <div className="containerTable">
       <table>
         <thead>
           <tr>
@@ -32,6 +33,9 @@ export default function PresidentsTable(props) {
           {presidentData.length != 0 ? presidentData.map((element, idx) => {
             return <tr key={idx}>
               {Object.values(element).map((element, idx) => {
+                if (element == null) {
+                  return <td key={idx}>-</td>
+                }
                 return <td key={idx}>{element}</td>
               })}
             </tr>

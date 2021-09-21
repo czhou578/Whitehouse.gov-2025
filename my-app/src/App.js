@@ -340,20 +340,24 @@ function App() {
             <section>
               <div className="linkToPresidents">
                 <Link to="/presTable"> 
-                  <a>Check out All Previous Presidents</a>
+                  <a className="link-1">Check out All Previous Presidents</a>
                 </Link>
               </div>
             </section>
           </div>
         </Route>
         <Route path="/presTable">
-            <section>
-              <div className="linkToPresidents">
+          <div> 
+            <Taskbar />
+          </div>
+            <section className="dataTable">
+              <h2 className="presHeader"> List of Presidents </h2>
+              <div>
                 <Route path="/presTable" component={PresidentsTable} />
               </div>
-              <div>
+              <div className="back">
                 <Link to="/">
-                  Back to Main Page
+                <a className="link-1">Back to Main Page</a>
                 </Link>
               </div>
             </section>
