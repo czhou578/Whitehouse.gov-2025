@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './PresidentsTable.css'
+import Button from '@mui/material/Button';
 
 const getData = () => {
   return fetch('https://raw.githubusercontent.com/hitch17/sample-data/master/presidents.json').then((data) => data.json()).then((data) => {
@@ -10,6 +11,7 @@ const getData = () => {
 export default function PresidentsTable(props) {
   const [presidentData, setPresidentData] = useState([])
   const [tableHeaders, setTableHeaders] = useState([])
+  const [inputFieldValue, setinputFieldValue] = useState('')
 
   useEffect(() => {
     getData().then((data) => {
@@ -19,7 +21,20 @@ export default function PresidentsTable(props) {
     })
   }, [])
 
+  const returnFilteredRows = (row, filterKey) => {
+    return row.filter((row) => {
+      return Object.values(row).some(s => ("" + s).toLowerCase().includes(filterKey))
+    })
+  }
+
   return (
+    <div className="containerBox">
+      <div className="inputContain"> 
+        <input type="text" placeholder="Search Names...." onChange={(e) => {
+          setinputFieldValue(e.target.value)
+        }} />
+        {/* <Button variant="contained" onClick={(e) => setinputFieldValue(e.target.value)}>Search</Button> */}
+      </div>
     <div className="containerTable">
       <table>
         <thead>
@@ -30,7 +45,7 @@ export default function PresidentsTable(props) {
           </tr>
         </thead>
         <tbody>
-          {presidentData.length != 0 ? presidentData.map((element, idx) => {
+          {presidentData.length != 0 ? returnFilteredRows(presidentData, inputFieldValue).map((element, idx) => {
             return <tr key={idx}>
               {Object.values(element).map((element, idx) => {
                 if (element == null) {
@@ -42,6 +57,8 @@ export default function PresidentsTable(props) {
           }) : null}
         </tbody>
       </table>
+    </div>
+
     </div>
   )
 }

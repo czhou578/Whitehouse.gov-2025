@@ -427,6 +427,7 @@ h1 {
 
 .dataTable {
   background-color: azure;
+  height: 170vh;
 }
 
 .presHeader {
@@ -441,5 +442,20 @@ h1 {
 
 .back a {
   color: orange;
+}
 
+.inputContain {
+  margin-left: 750px;
+  margin-bottom: 100px;
+}
+
+.inputContain input {
+  font-size: 15px;
+  border-radius: 5px;
+  height: 33px;
+}
+
+.inputContain Button {
+  margin-left: 10px;
+  margin-top: -2px;
 }

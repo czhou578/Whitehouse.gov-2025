@@ -13,7 +13,7 @@ import ChartDescription from "./ChartDescription";
 import PieChart from "./PieChart";
 import BudgetPieChart from "./BudgetPieChart";
 import CustomTheme from "./CustomTheme";
-import { Grid, Image, Rail, Segment, Container } from 'semantic-ui-react'
+import { Grid, Rail, Segment} from 'semantic-ui-react'
 import FPTable from "./FPTable";
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import PresidentsTable from "./PresidentsTable";
@@ -105,8 +105,6 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact> 
-
-
           <div id="body">
             <Taskbar />
             <section className="cover-splash">
@@ -355,12 +353,12 @@ function App() {
               <div>
                 <Route path="/presTable" component={PresidentsTable} />
               </div>
+            </section>
               <div className="back">
                 <Link to="/">
                 <a className="link-1">Back to Main Page</a>
                 </Link>
               </div>
-            </section>
         </Route>
       </Switch>
     </Router>
