@@ -18,6 +18,7 @@ import FPTable from "./Foreign Policy/FPTable";
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import PresidentsTable from "./PresidentsTable/PresidentsTable";
 import video from "../src/videoYang.mp4"
+import CoronavirusDataTable from "./Coronavirus Table/CoronavirusDataTable";
 
 const fetchData = () => {
   return fetch('https://raw.githubusercontent.com/hitch17/sample-data/master/presidents.json').then((data) => data.json()).then((data) => {
@@ -361,6 +362,16 @@ function App() {
                 <a className="link-1">Back to Main Page</a>
                 </Link>
               </div>
+        </Route>
+        <Route path="/coronavirus"> 
+          <div> 
+            <Taskbar />
+          </div>
+          <section> 
+            <div> 
+              <CoronavirusDataTable />
+            </div>
+          </section>
         </Route>
       </Switch>
     </Router>
