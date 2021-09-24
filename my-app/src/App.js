@@ -1,9 +1,9 @@
 import "./App.css";
-import "./Taskbar.css";
-import "./Infocard.scss";
-import Taskbar from "./Taskbar";
-import InfoCard from "./Infocard";
-import FPolicy from "./FPolicy";
+import "./Taskbar/Taskbar.css";
+import "./Infocard/Infocard.scss";
+import Taskbar from "./Taskbar/Taskbar";
+import InfoCard from "./Infocard/Infocard";
+import FPolicy from "./Foreign Policy/FPolicy";
 import {useEffect} from "react";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import Speech from "./Speeches";
@@ -14,11 +14,10 @@ import PieChart from "./PieChart";
 import BudgetPieChart from "./BudgetPieChart";
 import CustomTheme from "./CustomTheme";
 import { Grid, Rail, Segment} from 'semantic-ui-react'
-import FPTable from "./FPTable";
+import FPTable from "./Foreign Policy/FPTable";
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import PresidentsTable from "./PresidentsTable";
+import PresidentsTable from "./PresidentsTable/PresidentsTable";
 import video from "../src/videoYang.mp4"
-// import video from './'
 
 const fetchData = () => {
   return fetch('https://raw.githubusercontent.com/hitch17/sample-data/master/presidents.json').then((data) => data.json()).then((data) => {
@@ -106,7 +105,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact> 
+        <Route path="/" exact>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <div id="body">
             <Taskbar />
             <section className="cover-splash">
@@ -323,7 +323,7 @@ function App() {
                   <FPTable />
                 </div>
                 <div className="livestream">
-                  <video height="240" width="320" controls autoPlay>
+                  <video height="240" width="320" controls>
                     <source src={video} type="video/mp4" />
                   </video>
                 </div>

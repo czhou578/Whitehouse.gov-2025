@@ -1,4 +1,4 @@
-import whiteHouse from './imgs/whiteHouse.svg'
+import whiteHouse from '../../src/imgs/whiteHouse.svg'
 
 export default function Taskbar() {
 
