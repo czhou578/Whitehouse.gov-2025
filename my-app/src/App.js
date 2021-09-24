@@ -368,7 +368,7 @@ function App() {
             <Taskbar />
           </div>
           <section> 
-            <div> 
+            <div className="covidTable"> 
               <CoronavirusDataTable />
             </div>
           </section>

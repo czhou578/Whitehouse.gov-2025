@@ -1,0 +1,16 @@
+th div {
+  margin-top: -20px;
+  position: absolute;
+}
+
+table {
+  height: 700px;
+  margin-top: 20px;
+  display: inline-block;
+  overflow: auto;
+  width: 60%;
+}
+
+th {
+  width: 400px;
+}
