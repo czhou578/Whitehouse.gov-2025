@@ -1,6 +1,7 @@
 th div {
-  margin-top: -20px;
+  margin-top: -30px;
   position: absolute;
+  text-align: center;
 }
 
 table {
@@ -13,4 +14,5 @@ table {
 
 th {
   width: 400px;
+  border: none !important;
 }

@@ -368,6 +368,7 @@ function App() {
             <Taskbar />
           </div>
           <section> 
+            <h2 className="presHeader"> Coronavirus Data Visualized </h2>
             <div className="covidTable"> 
               <CoronavirusDataTable />
             </div>
