@@ -4,7 +4,7 @@ th div {
   text-align: center;
 }
 
-table {
+.tableCovidData {
   height: 700px;
   margin-top: 20px;
   display: inline-block;
@@ -12,7 +12,21 @@ table {
   width: 60%;
 }
 
-th {
+.covidTableTH {
   width: 400px;
   border: none !important;
+}
+
+.graph {
+  margin-right: 400px;
+  margin-bottom: 100px;
+}
+
+.barGraph {
+  margin-right: 400px;
+  margin-bottom: 100px;
+}
+
+.tableCovid {
+  padding-bottom: 150px;
 }

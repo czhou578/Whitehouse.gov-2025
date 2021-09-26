@@ -1,31 +1,16 @@
 import { useEffect, useState } from "react";
 import Papa from "papaparse"
 import './covidTable.css'
-import Chart from 'chart.js/auto';
-import {Line} from 'react-chartjs-2';
+import {Bar, Line} from 'react-chartjs-2';
 
 const extractHeaders = (obj) => {
   return Object.keys(obj)
 }
 
-const state = {
-  labels: ['Jan 2020', 'Feb 2020', 'Mar 2020', 'April 2020', 'June 2020', 'July 2020', 'Aug 2020', 'Sept 2020', 'Oct 2020', 'Nov 2020',
-          'Dec 2020', 'Jan 2021', 'Feb 2021', 'Mar 2021', 'April 2021', 'May 2021', 'June 2021', 'July 2021', 'Aug 2021', 'Sept 2021'],
-  datasets: [
-    {
-      label: 'TestGraph',
-      fill: false,
-            lineTension: 0.5,
-      backgroundColor: 'rgba(75,192,192,1)',
-      borderColor: 'rgba(0,0,0,1)',
-      borderWidth: 2,
-      data: [65, 59, 80, 81, 56]
-    }
-  ]
-}
-
 export default function CoronavirusDataTable(props) {
   const [data, setData] = useState([])
+  const [dataDeaths, setDataDeaths] = useState([])
+  const [dataCases, setDataCases] = useState([]) //contains api cases objects fetched
   const [headers, setHeaders] = useState([])
 
   useEffect(() => {
@@ -36,20 +21,46 @@ export default function CoronavirusDataTable(props) {
       complete: function(results) {
         setHeaders(extractHeaders(results.data[0]))
         setData(results.data)
+        setDataCases({
+          labels: results.data.map((element) => element.date),
+          datasets: [
+            {
+              label: "Covid Cases",
+              data: results.data.map((element) => element.cases),
+              backgroundColor: [
+                "#ffbb11",
+              ]
+            },
+          ]
+        })
+        setDataDeaths({
+          labels: results.data.map((element) => element.date),
+          datasets: [
+            {
+              label: "Covid Deaths",
+              data: results.data.map((element) => element.deaths),
+              backgroundColor: [
+                "#ff0000",
+              ]
+            }
+          ]
+        })
       }
     })
   }, [])
 
   return (
     <div>
-      <div>
+      <div className="graph">
         <Line 
-          data={state}
+          height={50}
+          width={120}
+          data={dataCases}
           options={{
             title:{
               display:true,
               text:'Average Rainfall per month',
-              fontSize:20
+              fontSize:10
             },
             legend:{
               display:true,
@@ -58,21 +69,30 @@ export default function CoronavirusDataTable(props) {
           }}
         />
       </div>
-      <table>
-          {headers.length != 0 ? headers.map((element, idx) => {
-            return <th key={idx}><div> {element} </div></th>
-          }) : null}
-
-        <tbody>
-            {data.length != 0 ? data.map((element, idx) => {
-              return <tr key={idx}>
-                {Object.values(element).map((value, idx) => {
-                  return <td key={idx}>{value}</td>
-                })}
-              </tr>
+      <div className="barGraph">
+        <Bar 
+          height={50}
+          width={90}
+          data={dataDeaths}
+        />
+      </div>
+      <div className="tableCovid">
+        <table className="tableCovidData">
+            {headers.length != 0 ? headers.map((element, idx) => {
+              return <th key={idx} className="covidTableTH"><div> {element} </div></th>
             }) : null}
-        </tbody>
-      </table>
+
+          <tbody>
+              {data.length != 0 ? data.map((element, idx) => {
+                return <tr key={idx}>
+                  {Object.values(element).map((value, idx) => {
+                    return <td key={idx}>{value}</td>
+                  })}
+                </tr>
+              }) : null}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }

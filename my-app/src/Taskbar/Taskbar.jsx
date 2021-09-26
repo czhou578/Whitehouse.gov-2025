@@ -9,7 +9,9 @@ export default function Taskbar() {
   return (
     <div className="container">
       <div id="logo">
-        <img src={whiteHouse} alt=""/>
+        <Link to="/" exact> 
+          <img src={whiteHouse} alt=""/>
+        </Link>
       </div>
       <ul>
         <li><a href="#" style={style}>Economy</a></li>
