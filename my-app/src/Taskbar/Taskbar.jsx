@@ -1,5 +1,5 @@
 import whiteHouse from '../../src/imgs/whiteHouse.svg'
-import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import {BrowserRouter as Router, Link } from 'react-router-dom'
 
 export default function Taskbar() {
 
@@ -21,7 +21,6 @@ export default function Taskbar() {
           <Link to="/coronavirus">
             <li><a href="#" style={style}>Coronavirus.gov</a></li>
           </Link>
-
       </ul>
     </div>
   )
