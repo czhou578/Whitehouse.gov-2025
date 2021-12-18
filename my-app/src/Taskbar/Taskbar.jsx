@@ -1,5 +1,7 @@
 import whiteHouse from '../../src/imgs/whiteHouse.svg'
 import {BrowserRouter as Router, Link } from 'react-router-dom'
+// import FPolicy from "./Foreign Policy/FPolicy";
+
 
 export default function Taskbar() {
 
