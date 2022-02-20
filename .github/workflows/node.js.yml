@@ -7,7 +7,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  frontend-tests:
+  frontend-test :
     name: Frontend Tests
     runs-on: ubuntu-latest
     steps:
