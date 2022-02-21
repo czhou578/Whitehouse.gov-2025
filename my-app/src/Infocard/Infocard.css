@@ -11,7 +11,8 @@
   font-size: 20px;
 }
 
-#card-1, #card-2 {
+#card-1,
+#card-2 {
   cursor: pointer;
   padding-bottom: 10px;
   -webkit-transition: top ease 0.5s;
@@ -22,26 +23,42 @@
   cursor: pointer;
 }
 
-#card-1, #card-2, #card-3, #card-4 {
+#card-1,
+#card-2,
+#card-3,
+#card-4 {
   height: 200px;
 }
 
-#card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover, #card-1:not(:hover), #card-2:not(:hover), #card-3:not(:hover), #card-4:not(:hover) {
+#card-1:hover,
+#card-2:hover,
+#card-3:hover,
+#card-4:hover,
+#card-1:not(:hover),
+#card-2:not(:hover),
+#card-3:not(:hover),
+#card-4:not(:hover) {
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
 
-#card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover {
+#card-1:hover,
+#card-2:hover,
+#card-3:hover,
+#card-4:hover {
   -webkit-box-shadow: 5px 10px #73708d;
-          box-shadow: 5px 10px #73708d;
+  box-shadow: 5px 10px #73708d;
   -webkit-transform: translateZ(16);
-          transform: translateZ(16);
+  transform: translateZ(16);
   background-color: aliceblue;
   will-change: transform;
 }
 
-#card-1:not(:hover), #card-2:not(:hover), #card-3:not(:hover), #card-4:not(:hover) {
+#card-1:not(:hover),
+#card-2:not(:hover),
+#card-3:not(:hover),
+#card-4:not(:hover) {
   -webkit-box-shadow: 0px;
-          box-shadow: 0px;
+  box-shadow: 0px;
 }
 /*# sourceMappingURL=Infocard.css.map */

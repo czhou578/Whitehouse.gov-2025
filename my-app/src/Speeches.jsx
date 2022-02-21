@@ -1,29 +1,28 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginLeft: '650px',
-    marginTop: '-270px'
+    marginLeft: "650px",
+    marginTop: "-270px",
   },
   paper: {
     padding: theme.spacing(1),
-    textAlign: 'center',
+    textAlign: "center",
     color: theme.palette.text.secondary,
-    backgroundColor: 'lightYellow',
-    cursor: 'pointer',
-    marginTop: '25px',
+    backgroundColor: "lightYellow",
+    cursor: "pointer",
+    marginTop: "25px",
   },
-  
+
   effects: {
-    '&::hover': {
-      color: 'red'
+    "&::hover": {
+      color: "red",
     },
-    
-  }
+  },
 }));
 
 export default function NestedGrid() {
@@ -41,7 +40,7 @@ export default function NestedGrid() {
         <Grid item xs={4}>
           <Paper className={classes.paper}>
             <a href="#">President's Remarks 2</a> <br></br>
-            <time>April 12, 2027</time>  
+            <time>April 12, 2027</time>
           </Paper>
         </Grid>
       </React.Fragment>

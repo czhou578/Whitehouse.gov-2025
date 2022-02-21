@@ -2,7 +2,9 @@
   margin-left: 300px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid darkcyan;
 }
 

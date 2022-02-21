@@ -1,6 +1,5 @@
 $color: black;
 
-
 .description {
   color: $color;
   font-size: 13px;
@@ -14,11 +13,11 @@ $color: black;
   font-size: 20px;
 }
 
-#card-1, #card-2 {
+#card-1,
+#card-2 {
   cursor: pointer;
   padding-bottom: 10px;
   transition: top ease 0.5s;
-
 }
 
 #card-3 {
@@ -29,7 +28,10 @@ $color: black;
   height: 200px;
 }
 
-#card-1, #card-2, #card-3, #card-4 {
+#card-1,
+#card-2,
+#card-3,
+#card-4 {
   @extend %sharedHeight;
 }
 
@@ -37,7 +39,10 @@ $color: black;
   transition: 0.25s ease-in-out;
 }
 
-#card-1:hover, #card-2:hover, #card-3:hover, #card-4:hover {
+#card-1:hover,
+#card-2:hover,
+#card-3:hover,
+#card-4:hover {
   box-shadow: 5px 10px rgb(115, 112, 141);
   transform: translateZ(16);
   background-color: aliceblue;
@@ -45,8 +50,10 @@ $color: black;
   will-change: transform;
 }
 
-#card-1:not(:hover), #card-2:not(:hover), #card-3:not(:hover), #card-4:not(:hover) {
+#card-1:not(:hover),
+#card-2:not(:hover),
+#card-3:not(:hover),
+#card-4:not(:hover) {
   box-shadow: 0px;
   @extend %transitionEaseOut;
 }
-

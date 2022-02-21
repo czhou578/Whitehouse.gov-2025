@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,8 +13,8 @@ body {
 
 .title {
   margin-left: 100px;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cover-splash {
@@ -35,8 +35,8 @@ body {
 }
 
 .head-title {
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 35px;
   font-weight: 450;
   margin-left: 15%;
@@ -141,7 +141,13 @@ body {
 }
 
 .econ-wrap {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(lightBlue));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(white),
+    to(lightBlue)
+  );
   background-image: linear-gradient(white, lightBlue);
   height: 145vh;
 }
@@ -257,7 +263,7 @@ li {
 }
 
 h1 {
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 #econ-descrip {
@@ -272,8 +278,8 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .barChart {
@@ -303,14 +309,18 @@ h1 {
   width: 400px;
 }
 
-#panel-1 img, #panel-2 img, #panel-4 img {
+#panel-1 img,
+#panel-2 img,
+#panel-4 img {
   height: 300px;
   width: 470px;
   border-radius: 10px;
 }
 
-#panel-1 p, #panel-2 p, #panel-4 p {
-  font-family: 'Montserrat', sans-serif;
+#panel-1 p,
+#panel-2 p,
+#panel-4 p {
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 450;
 }
@@ -355,7 +365,8 @@ h1 {
   padding-top: 50px;
 }
 
-.fop-pic, .card-grid {
+.fop-pic,
+.card-grid {
   margin-top: 50px;
   margin-left: 10px;
 }
@@ -364,7 +375,7 @@ h1 {
   height: 350px;
   width: 780px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .ftable {
@@ -400,7 +411,7 @@ h1 {
   height: 400px;
   width: 400px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .budget > div {

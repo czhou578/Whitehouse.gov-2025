@@ -1,11 +1,11 @@
-import React, { PureComponent } from 'react';
-import { VictoryBar, VictoryChart, VictoryAxis } from 'victory';
+import React from "react";
+import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
 
 const data = [
-  {quarter: 1, earnings: 13000},
-  {quarter: 2, earnings: 16500},
-  {quarter: 3, earnings: 14250},
-  {quarter: 4, earnings: 19000}
+  { quarter: 1, earnings: 13000 },
+  { quarter: 2, earnings: 16500 },
+  { quarter: 3, earnings: 14250 },
+  { quarter: 4, earnings: 19000 },
 ];
 
 export default class HBarChart extends React.Component {
@@ -17,7 +17,7 @@ export default class HBarChart extends React.Component {
         domainPadding={20}
         animate={{
           duration: 2000,
-          onLoad: { duration: 1000 }
+          onLoad: { duration: 1000 },
         }}
       >
         <VictoryAxis
@@ -29,15 +29,10 @@ export default class HBarChart extends React.Component {
         <VictoryAxis
           dependentAxis
           // tickFormat specifies how ticks should be displayed
-          tickFormat={(x) => (`$${x / 1000}k`)}
+          tickFormat={(x) => `$${x / 1000}k`}
         />
-        <VictoryBar
-          data={data}
-          x="quarter"
-          y="earnings"
-        />
+        <VictoryBar data={data} x="quarter" y="earnings" />
       </VictoryChart>
-    )
+    );
   }
 }
-

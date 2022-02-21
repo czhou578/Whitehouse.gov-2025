@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
@@ -13,8 +13,8 @@ body {
 
 .title {
   margin-left: 100px;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .cover-splash {
@@ -35,8 +35,8 @@ body {
 }
 
 .head-title {
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 35px;
   font-weight: 450;
   margin-left: 15%;
@@ -57,7 +57,6 @@ body {
     height: 300px;
     margin-left: 150px;
     border-radius: 5px;
-
   }
 }
 
@@ -81,7 +80,6 @@ body {
     margin-left: 300px;
     margin-bottom: 50px;
     border-radius: 5px;
-
   }
 }
 
@@ -123,7 +121,6 @@ body {
 
 .info {
   display: inline-block;
-  
 }
 .down-arrow {
   margin-top: 10px;
@@ -217,7 +214,7 @@ li {
 
 .cross-wrap {
   margin-top: 50px;
-} 
+}
 
 .cross-wrap > span {
   color: white;
@@ -242,7 +239,6 @@ li {
   position: absolute;
   left: -23px;
   border: 2px solid #876450;
-
 }
 
 .econ-topics:hover {
@@ -259,7 +255,7 @@ li {
 }
 
 h1 {
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 #econ-descrip {
@@ -299,15 +295,18 @@ h1 {
   width: 400px;
 }
 
-#panel-1 img, #panel-2 img, #panel-4 img {
+#panel-1 img,
+#panel-2 img,
+#panel-4 img {
   height: 300px;
   width: 470px;
   border-radius: 10px;
-
 }
 
-#panel-1 p, #panel-2 p, #panel-4 p {
-  font-family: 'Montserrat', sans-serif;
+#panel-1 p,
+#panel-2 p,
+#panel-4 p {
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 450;
 }
@@ -344,7 +343,6 @@ h1 {
 @media all and (max-width: 800px) {
   .foreign-policy {
     color: lightblue;
-
   }
 }
 
@@ -353,7 +351,8 @@ h1 {
   padding-top: 50px;
 }
 
-.fop-pic, .card-grid  {
+.fop-pic,
+.card-grid {
   margin-top: 50px;
   margin-left: 10px;
 }
