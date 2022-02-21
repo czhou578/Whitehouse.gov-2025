@@ -26,7 +26,16 @@ const fetchData = () => {
   })
 }
 
+const testGoogle = async () => {
+  let data = await fetch('https://www.googleapis.com/civicinfo/v2/elections?key=AIzaSyA9Ffz_6qbDL4H4o8peICHb1MsG3r0YbZk')
+  console.log(data);
+}
+
 function App() {
+
+  useEffect(() => {
+    testGoogle()
+  }, [])
 
   useEffect(() => {
     fetchData().then((data) => {
