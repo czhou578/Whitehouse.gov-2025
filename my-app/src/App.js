@@ -7,12 +7,12 @@ import FPolicy from "./Foreign Policy/FPolicy";
 import { useEffect } from "react";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import Speech from "./Speeches";
-import BarChart from "./HBarChart";
-import LineChart from "./HLineChart";
-import ChartDescription from "./ChartDescription";
-import PieChart from "./PieChart";
-import BudgetPieChart from "./BudgetPieChart";
-import CustomTheme from "./CustomTheme";
+import BarChart from "./Charts/HBarChart";
+import LineChart from "./Charts/HLineChart";
+import ChartDescription from "./Charts/ChartDescription";
+import PieChart from "./Charts/PieChart";
+import BudgetPieChart from "./Charts/BudgetPieChart";
+import CustomTheme from "./Charts/CustomTheme";
 import { Grid, Rail, Segment } from "semantic-ui-react";
 import FPTable from "./Foreign Policy/FPTable";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -151,7 +151,7 @@ function App() {
                 </div>
               </div>
             </section>
-            <section className="economy">
+            <section className="economy" id="economy">
               <div className="econ-wrap">
                 <div>
                   <h1 className="title">Economy And Finance</h1>
@@ -255,7 +255,7 @@ function App() {
                 </div>
               </div>
             </section>
-            <section className="healthcare">
+            <section className="healthcare" id="healthcare">
               <h1 className="title">Health and Fitness</h1>
               <div className="line"></div>
               <div id="three-column">
@@ -329,7 +329,7 @@ function App() {
                 </div>
               </div>
             </section>
-            <section className="foreign-policy">
+            <section className="foreign-policy" id="fp">
               <h1 className="title">Foreign Policy / Cooperation</h1>
               <div className="line"></div>
               <div className="fop-pic">
@@ -348,7 +348,7 @@ function App() {
                 </video>
               </div>
             </section>
-            <section className="budget">
+            <section className="budget" id="budget">
               <div>
                 <h1 className="title">Budget Overview</h1>
                 <div className="line"></div>
@@ -381,6 +381,13 @@ function App() {
               <a className="link-1">Back to Main Page</a>
             </Link>
           </div>
+        </Route>
+
+        <Route path="/elections">
+          <div>
+            <Taskbar />
+          </div>
+          <section></section>
         </Route>
         <Route path="/coronavirus">
           <div>

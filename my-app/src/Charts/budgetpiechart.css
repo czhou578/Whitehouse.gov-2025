@@ -1,0 +1,22 @@
+.container.victoryChart {
+  height: 500px;
+  position: absolute;
+  right: 0px;
+  background: none !important;
+}
+
+.container.chart2 {
+  padding-top: 250px !important;
+  position: absolute;
+  left: 20px !important;
+  width: 300px !important;
+  background: none !important;
+}
+
+.container.rbarchart {
+  width: 500px !important;
+  height: 300px;
+  position: absolute;
+  left: 0px;
+  background: none !important;
+}

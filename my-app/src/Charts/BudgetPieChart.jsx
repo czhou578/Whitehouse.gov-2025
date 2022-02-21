@@ -1,7 +1,15 @@
 import React from "react";
 import { Container } from "semantic-ui-react";
 import { VictoryPie } from "victory";
-import { PieChart, Pie } from "recharts";
+import {
+  PieChart,
+  Pie,
+  RadialBar,
+  RadialBarChart,
+  Legend,
+  Tooltip,
+} from "recharts";
+import "./budgetpiechart.css";
 
 const data01 = [
   {
@@ -41,6 +49,7 @@ const data02 = [
 ];
 
 const data = [
+  //for radial bar chart
   {
     name: "18-24",
     uv: 31.47,
@@ -77,19 +86,13 @@ const data = [
     pv: 4800,
     fill: "#d0ed57",
   },
-  {
-    name: "unknow",
-    uv: 6.67,
-    pv: 4800,
-    fill: "#ffc658",
-  },
 ];
 
 export default class BudgetPieChart extends React.Component {
   render() {
     return (
       <>
-        <Container>
+        <Container className="victoryChart">
           <VictoryPie
             height={50}
             width={700}
@@ -126,33 +129,33 @@ export default class BudgetPieChart extends React.Component {
               { x: "Healthcare", y: 45 },
             ]}
           />
-
-          <Container>
-            <PieChart width={730} height={250}>
-              <Pie
-                data={data01}
-                dataKey="value"
-                nameKey="name"
-                cx="50%"
-                cy="50%"
-                outerRadius={50}
-                fill="#8884d8"
-              />
-              <Pie
-                data={data02}
-                dataKey="value"
-                nameKey="name"
-                cx="50%"
-                cy="50%"
-                innerRadius={60}
-                outerRadius={80}
-                fill="#82ca9d"
-                label
-              />
-            </PieChart>
-          </Container>
         </Container>
-        <Container>
+        <h2>Unemployment by Age</h2>
+        <Container className="chart2">
+          <PieChart width={730} height={250}>
+            <Pie
+              data={data01}
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              outerRadius={50}
+              fill="#8884d8"
+            />
+            <Pie
+              data={data02}
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              innerRadius={60}
+              outerRadius={80}
+              fill="#82ca9d"
+              label
+            />
+          </PieChart>
+        </Container>
+        <Container className="rbarchart">
           <RadialBarChart
             width={730}
             height={250}

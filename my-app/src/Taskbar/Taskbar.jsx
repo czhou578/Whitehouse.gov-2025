@@ -1,6 +1,5 @@
 import whiteHouse from "../../src/imgs/whiteHouse.svg";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-// import FPolicy from "./Foreign Policy/FPolicy";
 
 export default function Taskbar() {
   const style = {
@@ -14,24 +13,29 @@ export default function Taskbar() {
         </Link>
       </div>
       <ul>
+        <Link to="/elections">
+          <li>
+            <a href="#">Current Elections</a>
+          </li>
+        </Link>
         <li>
-          <a href="#" style={style}>
+          <a href="#economy" style={style}>
             Economy
           </a>
         </li>
         <li>
-          <a href="#" style={style}>
+          <a href="#fp" style={style}>
             National Security
           </a>
         </li>
         <li>
-          <a href="#" style={style}>
+          <a href="#budget" style={style}>
             Budget
           </a>
         </li>
         <li>
-          <a href="#" style={style}>
-            Immigration
+          <a href="#healthcare" style={style}>
+            Healthcare
           </a>
         </li>
         <Link to="/coronavirus">
