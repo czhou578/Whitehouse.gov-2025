@@ -19,6 +19,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PresidentsTable from "./PresidentsTable/PresidentsTable";
 import video from "../src/videoYang.mp4";
 import CoronavirusDataTable from "./Coronavirus Table/CoronavirusDataTable";
+import Elections from "./Elections";
 
 const fetchData = () => {
   return fetch(
@@ -30,12 +31,7 @@ const fetchData = () => {
     });
 };
 
-const testGoogle = async () => {
-  let data = await fetch(
-    "https://www.googleapis.com/civicinfo/v2/elections?key=AIzaSyA9Ffz_6qbDL4H4o8peICHb1MsG3r0YbZk"
-  );
-  console.log(data);
-};
+
 
 function App() {
   // useEffect(() => {
@@ -387,7 +383,12 @@ function App() {
           <div>
             <Taskbar />
           </div>
-          <section></section>
+          <section>
+            <h2 className="presHeader"> Election Information </h2>
+            <div>
+              <Elections />
+            </div>
+          </section>
         </Route>
         <Route path="/coronavirus">
           <div>
