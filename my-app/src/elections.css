@@ -1,0 +1,9 @@
+.electionWrap {
+  margin-left: 20%;
+}
+
+.cardGroup {
+  position: relative;
+  left: 150px;
+  margin-top: 20px !important;
+}

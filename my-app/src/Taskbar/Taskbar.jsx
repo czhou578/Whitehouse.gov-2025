@@ -15,7 +15,9 @@ export default function Taskbar() {
       <ul>
         <Link to="/elections">
           <li>
-            <a href="#" style={style}>Current Elections</a>
+            <a href="#" style={style}>
+              Current Elections
+            </a>
           </li>
         </Link>
         <li>

@@ -31,8 +31,6 @@ const fetchData = () => {
     });
 };
 
-
-
 function App() {
   // useEffect(() => {
   //   testGoogle()
@@ -384,7 +382,7 @@ function App() {
             <Taskbar />
           </div>
           <section>
-            <h2 className="presHeader"> Election Information </h2>
+            <h2 className="presHeader"> Current Elections </h2>
             <div>
               <Elections />
             </div>
