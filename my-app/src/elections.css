@@ -7,3 +7,14 @@
   left: 150px;
   margin-top: 20px !important;
 }
+
+.inputGroup {
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 160px;
+  padding-bottom: 50px;
+}
+
+.zip {
+  width: 200px !important;
+}
