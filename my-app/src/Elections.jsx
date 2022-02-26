@@ -7,7 +7,7 @@ const Elections = () => {
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [stateInitial, setStateInitial] = useState("");
-  const [repData, setRepData] = useState();
+  const [repData, setRepData] = useState([]);
 
   useEffect(() => {
     async function fetchElection() {
@@ -40,14 +40,12 @@ const Elections = () => {
       urlSubString += `${resultString[i]}%20`;
     }
 
-    // console.log(urlSubString);
-
     let url = `https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyA9Ffz_6qbDL4H4o8peICHb1MsG3r0YbZk&address=${urlSubString}`;
 
     const result = await fetch(url);
     const answer = await result.json();
 
-    setRepData([...answer.officials[2], ...answer.officials[3]]);
+    setRepData([answer.officials[2], answer.officials[3]]);
 
     console.log(answer);
   };
@@ -92,6 +90,34 @@ const Elections = () => {
           </Form.Group>
           <Form.Button onClick={() => sendRepData()}>Submit</Form.Button>
         </Form>
+      </div>
+      <div>
+        {repData.length !== 0 ? (
+          <table>
+            <tr>
+              <th></th>
+              <th>Representative</th>
+              <th>Party</th>
+              <th>Phone</th>
+              <th>URL</th>
+            </tr>
+            {repData.map((element, key) => {
+              return (
+                <tr key={key}>
+                  <td>
+                    <img src={`${element.photoUrl}`} alt="" />
+                  </td>
+                  <td>{element.name}</td>
+                  <td>{element.party}</td>
+                  <td>{element.phones[0]}</td>
+                  <td>
+                    <a href={`${element.urls[0]}`}>{element.urls[0]}</a>
+                  </td>
+                </tr>
+              );
+            })}
+          </table>
+        ) : null}
       </div>
     </div>
   );
