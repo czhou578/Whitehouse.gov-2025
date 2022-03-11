@@ -6,7 +6,7 @@ import InfoCard from "./Infocard/Infocard";
 import FPolicy from "./Foreign Policy/FPolicy";
 import { useEffect } from "react";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
-import Speech from "./Speeches";
+import Speech from "./Speeches/Speeches";
 import BarChart from "./Charts/HBarChart";
 import LineChart from "./Charts/HLineChart";
 import ChartDescription from "./Charts/ChartDescription";
@@ -19,7 +19,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PresidentsTable from "./PresidentsTable/PresidentsTable";
 import video from "../src/videoYang.mp4";
 import CoronavirusDataTable from "./Coronavirus Table/CoronavirusDataTable";
-import Elections from "./Elections";
+import Elections from "./Elections/Elections";
 
 const fetchData = () => {
   return fetch(
@@ -376,7 +376,6 @@ function App() {
             </Link>
           </div>
         </Route>
-
         <Route path="/elections">
           <div>
             <Taskbar />

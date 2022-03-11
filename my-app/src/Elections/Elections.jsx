@@ -105,7 +105,7 @@ const Elections = () => {
               return (
                 <tr key={key}>
                   <td>
-                    <img src={`${element.photoUrl}`} alt="" />
+                    <img src={`${element.photoUrl}`} alt="No Profile Pic" />
                   </td>
                   <td>{element.name}</td>
                   <td>{element.party}</td>
