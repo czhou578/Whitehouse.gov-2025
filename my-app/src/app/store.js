@@ -4,8 +4,9 @@ import { candidatesApi } from "../services/fec";
 
 export const store = configureStore({
   reducer: {
-    [candidatesApi.reducerPath]: candidatesApi.reducer
+    [candidatesApi.reducerPath]: candidatesApi.reducer,
   },
 
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(candidatesApi.middleware)
-})
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(candidatesApi.middleware),
+});
