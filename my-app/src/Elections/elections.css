@@ -9,11 +9,21 @@
   margin-top: 20px !important;
 }
 
+.candidategroup {
+  margin-left: 27%;
+  margin-top: 5%;
+}
+
 .inputGroup {
   width: 50%;
   margin-top: 100px;
   margin-left: 160px;
   padding-bottom: 50px;
+  /* border: 2px solid gray; */
+}
+
+.inputGroup > h2 {
+  margin-left: 26%;
 }
 
 .zip {

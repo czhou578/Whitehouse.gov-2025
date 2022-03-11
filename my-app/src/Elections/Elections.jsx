@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card, Icon, Form } from "semantic-ui-react";
+import Candidates from "../Candidates/Candidates";
 import "./elections.css";
 
 const Elections = () => {
@@ -65,6 +66,9 @@ const Elections = () => {
           );
         })}
       </Card.Group>
+      <div className="candidategroup">
+        <Candidates />
+      </div>
       <div className="inputGroup">
         <h2>Find Your Local Representative</h2>
         <Form>
