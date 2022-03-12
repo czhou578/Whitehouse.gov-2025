@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Button, Header, Modal, Dropdown, Input } from "semantic-ui-react";
 import { useGetCandidatesQuery } from "../services/fec";
-import CandidateDisplay from './CandidateDisplay'
-
+import CandidateDisplay from "./CandidateDisplay";
 
 const activeOptions = [
   {
@@ -18,21 +17,10 @@ const activeOptions = [
 ];
 
 export default function Candidates(props) {
-  // const [results, setResults] = useState([]);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(null);
   const [nullVal, setNullVal] = useState(null);
   const [stateAbbv, setStateAbbv] = useState(null);
-  // const { data, error, isLoading, isSuccess, isError } = useGetCandidatesQuery();
-
-  const submitData = () => {
-
-    // useGetCandidatesQuery({
-    //   active: active,
-    //   nullVal: nullVal,
-    //   stateAbbv: stateAbbv
-    // })
-  }
 
   return (
     <div>
@@ -43,8 +31,14 @@ export default function Candidates(props) {
         <br />
         filings.
       </p>
-      {active && nullVal && stateAbbv ? (
-        <CandidateDisplay dataToQuery={{active: active, nullVal: nullVal, stateAbbv: stateAbbv}}/>
+      {active && nullVal && stateAbbv && !open ? (
+        <CandidateDisplay
+          dataToQuery={{
+            active: active,
+            nullVal: nullVal,
+            stateAbbv: stateAbbv,
+          }}
+        />
       ) : null}
       <Modal
         onClose={() => setOpen(false)}
@@ -80,9 +74,9 @@ export default function Candidates(props) {
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
-          <Button color="black" onClick={() => setOpen(false)}>
+          {/* <Button color="black" onClick={() => setOpen(false)}>
             Cancel
-          </Button>
+          </Button> */}
           <Button
             content="Search"
             labelPosition="right"
