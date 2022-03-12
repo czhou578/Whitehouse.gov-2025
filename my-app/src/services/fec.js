@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const KEY = `IgNk9OCDrOIWs3iK2cvgx9ddehvvfOFCAYjeUqxe`
+const KEY = `IgNk9OCDrOIWs3iK2cvgx9ddehvvfOFCAYjeUqxe`;
 
 export const candidatesApi = createApi({
   reducerPath: "reps",
@@ -9,8 +9,8 @@ export const candidatesApi = createApi({
   }),
   endpoints: (builder) => ({
     getCandidates: builder.query({
-      query: () =>
-        `candidates/search/?sort=name&per_page=20&is_active_candidate=true&sort_hide_null=true&page=1&api_key=${KEY}&state=WA`,
+      query: (request) =>
+        `candidates/search/?sort=name&per_page=20&is_active_candidate=${request.active}&sort_hide_null=${request.nullVal}&page=1&api_key=${KEY}&state=${request.stateAbbv}`,
     }),
   }),
 });

@@ -1,12 +1,8 @@
 import { useState } from "react";
-import {
-  Button,
-  Header,
-  Modal,
-  Dropdown,
-  Input,
-} from "semantic-ui-react";
+import { Button, Header, Modal, Dropdown, Input } from "semantic-ui-react";
 import { useGetCandidatesQuery } from "../services/fec";
+import CandidateDisplay from './CandidateDisplay'
+
 
 const activeOptions = [
   {
@@ -22,13 +18,21 @@ const activeOptions = [
 ];
 
 export default function Candidates(props) {
-  const [results, setResults] = useState([]);
+  // const [results, setResults] = useState([]);
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState(false)
-  const [nullVal, setNullVal] = useState(false)
-  const [stateAbbv, setStateAbbv] = useState(false)
-  const { data, error, isLoading, isSuccess, isError } = useGetCandidatesQuery()
+  const [active, setActive] = useState(null);
+  const [nullVal, setNullVal] = useState(null);
+  const [stateAbbv, setStateAbbv] = useState(null);
+  // const { data, error, isLoading, isSuccess, isError } = useGetCandidatesQuery();
 
+  const submitData = () => {
+
+    // useGetCandidatesQuery({
+    //   active: active,
+    //   nullVal: nullVal,
+    //   stateAbbv: stateAbbv
+    // })
+  }
 
   return (
     <div>
@@ -39,6 +43,9 @@ export default function Candidates(props) {
         <br />
         filings.
       </p>
+      {active && nullVal && stateAbbv ? (
+        <CandidateDisplay dataToQuery={{active: active, nullVal: nullVal, stateAbbv: stateAbbv}}/>
+      ) : null}
       <Modal
         onClose={() => setOpen(false)}
         onOpen={() => setOpen(true)}
@@ -57,8 +64,8 @@ export default function Candidates(props) {
               onChange={(e, value) => setActive(value.value)}
             />
             <Header>State Abbreviation</Header>
-            <Input 
-              focus 
+            <Input
+              focus
               placeholder="Abbrev."
               onChange={(e) => setStateAbbv(e.target.value)}
             />
