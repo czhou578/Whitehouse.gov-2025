@@ -1,6 +1,7 @@
 import { Button, Header, Modal, Dropdown, Input } from "semantic-ui-react";
 import React from "react";
 import { useFinancesQuery } from "../services/fec";
+import './finance.css'
 
 const CandidateFinanceModal = (props) => {
   const { setOpen, open, name, candidate_id } = props;
@@ -17,23 +18,23 @@ const CandidateFinanceModal = (props) => {
         trigger={<Button>Show Finances</Button>}
       >
         <Modal.Content>
-          <Modal.Description>
-            <Header>Candidate Finances for: {name}</Header>
+          <Modal.Description className="Fdescription">
+            <Header className="header">Candidate Finances for: {name}</Header>
             {isSuccess && data.results.length > 0 ? (
               <div>
-                <div>
+                <div className="contributions">
                   <h2>Operating Expenditures</h2>
-                  <p>{data.results[0].operating_expenditures}</p>
+                  <p>${data.results[0].operating_expenditures}</p>
                 </div>
-                <div>
+                <div className="contributions">
                   <h2>PAC contributions</h2>
                   <p>
-                    {data.results[0].political_party_committee_contributions}
+                    ${data.results[0].political_party_committee_contributions}
                   </p>
                 </div>
-                <div>
+                <div className="contributions">
                   <h2>Individual Contributions</h2>
-                  <p>{data.results[0].individual_contributions}</p>
+                  <p>${data.results[0].individual_contributions}</p>
                 </div>
               </div>
             ) : null}

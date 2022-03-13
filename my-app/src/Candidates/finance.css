@@ -1,0 +1,18 @@
+.header {
+  padding-left: 30%;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+.Fdescription {
+  padding-left: 25% !important;
+}
+
+.contributions > h2 {
+  white-space: nowrap;
+}
+
+.contributions > p {
+  font-size: 30px !important;
+  padding-bottom: 15px;
+}
