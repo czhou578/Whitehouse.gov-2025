@@ -1,11 +1,14 @@
 import { useGetCandidatesQuery } from "../services/fec";
-import { Button, Header, Modal, Dropdown, Input } from "semantic-ui-react";
+import CandidateFinanceModal from "./CandidateFinanceModal";
 import "./display.css";
+import React from "react";
 
 const CandidateDisplay = (props) => {
   const { dataToQuery } = props;
   const { data, error, isLoading, isSuccess, isError } =
     useGetCandidatesQuery(dataToQuery);
+  const [open, setOpen] = React.useState(false);
+
   console.log(JSON.stringify(data, null, 2));
 
   return (
@@ -15,7 +18,13 @@ const CandidateDisplay = (props) => {
         ? data.results.map((element, key) => {
             return (
               <div key={key} className="clink">
-                <a> {element.candidate_id} {element.name}</a>
+                <a onClick={() => setOpen(true)}> {element.name}</a>
+                <CandidateFinanceModal
+                  name={element.name}
+                  candidate_id={element.candidate_id}
+                  setOpen={setOpen}
+                  open={open}
+                />
               </div>
             );
           })

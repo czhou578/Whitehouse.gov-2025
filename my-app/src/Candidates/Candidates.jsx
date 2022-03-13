@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Button, Header, Modal, Dropdown, Input } from "semantic-ui-react";
-import { useGetCandidatesQuery } from "../services/fec";
 import CandidateDisplay from "./CandidateDisplay";
 
 const activeOptions = [
