@@ -24,8 +24,8 @@ export default function Candidates(props) {
 
   return (
     <div>
-      <h2>Find Candidate Filings</h2>
-      <p>
+      <h2 style={{ marginLeft: "-200px" }}>Find Candidate Filings</h2>
+      <p style={{ marginLeft: "-200px" }}>
         This section allows you to search for candidates who are <br />
         running for a national position and examine their campaign finance{" "}
         <br />
@@ -40,11 +40,14 @@ export default function Candidates(props) {
           }}
         />
       ) : null}
+
       <Modal
         onClose={() => setOpen(false)}
         onOpen={() => setOpen(true)}
         open={open}
-        trigger={<Button>Search Candidate</Button>}
+        trigger={
+          <Button style={{ marginLeft: "-200px" }}>Search Candidate</Button>
+        }
       >
         <Modal.Header>Search Candidate</Modal.Header>
         <Modal.Content>

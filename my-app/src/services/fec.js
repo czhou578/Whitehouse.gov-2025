@@ -10,7 +10,7 @@ export const candidatesApi = createApi({
   endpoints: (builder) => ({
     getCandidates: builder.query({
       query: (request) =>
-        `candidates/search/?sort=name&per_page=20&is_active_candidate=${request.active}&sort_hide_null=${request.nullVal}&page=1&api_key=${KEY}&state=${request.stateAbbv}`,
+        `candidates/search/?candidate_status=C&sort=name&per_page=20&is_active_candidate=${request.active}&sort_hide_null=${request.nullVal}&page=1&api_key=${KEY}&state=${request.stateAbbv}`,
     }),
   }),
 });
