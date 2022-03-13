@@ -1,5 +1,4 @@
-import { Button, Header, Modal, Dropdown, Input } from "semantic-ui-react";
-import React from "react";
+import { Button, Header, Modal } from "semantic-ui-react";
 import { useFinancesQuery } from "../services/fec";
 import './finance.css'
 
