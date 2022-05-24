@@ -47,8 +47,6 @@ const Elections = () => {
     const answer = await result.json();
 
     setRepData([answer.officials[2], answer.officials[3]]);
-
-    console.log(answer);
   };
 
   return (
@@ -56,7 +54,7 @@ const Elections = () => {
       <Card.Group itemsPerRow={2} className="cardGroup">
         {elections.map((element, key) => {
           return (
-            <Card key={key}>
+            <Card key={key} fluid>
               <Card.Content header={element.name} />
               <Card.Content description={element.electionDay} />
               <Card.Content extra>

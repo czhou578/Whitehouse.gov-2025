@@ -37,7 +37,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "svgr": "svgr -d src/icons/ imgs/"
+    "svgr": "svgr -d src/icons/ imgs/",
+    "prettier": "prettier -w ."
   },
   "eslintConfig": {
     "extends": [

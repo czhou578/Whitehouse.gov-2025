@@ -1,13 +1,12 @@
 import { Button, Header, Modal } from "semantic-ui-react";
 import { useFinancesQuery } from "../services/fec";
-import './finance.css'
+import "./finance.css";
 
 const CandidateFinanceModal = (props) => {
   const { setOpen, open, name, candidate_id } = props;
-  console.log(candidate_id);
   const { data, isLoading, isSuccess, error, isError } =
     useFinancesQuery(candidate_id);
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <Modal
@@ -18,7 +17,9 @@ const CandidateFinanceModal = (props) => {
       >
         <Modal.Content>
           <Modal.Description className="Fdescription">
-            <Header className="header">Candidate Finances for: {name}</Header>
+            <Header className="candiheader">
+              Candidate Finances for: {name}
+            </Header>
             {isSuccess && data.results.length > 0 ? (
               <div>
                 <div className="contributions">
