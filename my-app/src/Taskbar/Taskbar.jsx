@@ -1,5 +1,6 @@
 import whiteHouse from "../../src/imgs/whiteHouse.svg";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import React from "react";
 
 export default function Taskbar() {
   const style = {

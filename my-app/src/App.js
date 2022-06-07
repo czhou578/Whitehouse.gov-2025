@@ -20,6 +20,7 @@ import PresidentsTable from "./PresidentsTable/PresidentsTable";
 import video from "../src/videoYang.mp4";
 import CoronavirusDataTable from "./Coronavirus Table/CoronavirusDataTable";
 import Elections from "./Elections/Elections";
+import React from "react";
 
 const fetchData = () => {
   return fetch(
