@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 import Papa from "papaparse";
-import "./covidTable.css";
+import { useEffect, useState } from "react";
 import { Bar, Line } from "react-chartjs-2";
+import "./covidTable.css";
 
 const extractHeaders = (obj) => {
   return Object.keys(obj);

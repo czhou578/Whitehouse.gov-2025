@@ -1,26 +1,25 @@
-import "./App.css";
-import "./Taskbar/Taskbar.css";
-import "./Infocard/Infocard.scss";
-import Taskbar from "./Taskbar/Taskbar";
-import InfoCard from "./Infocard/Infocard";
-import FPolicy from "./Foreign Policy/FPolicy";
-import { useEffect } from "react";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
-import Speech from "./Speeches/Speeches";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { Grid, Rail, Segment } from "semantic-ui-react";
+import video from "../src/videoYang.mp4";
+import "./App.css";
+import BudgetPieChart from "./Charts/BudgetPieChart";
+import ChartDescription from "./Charts/ChartDescription";
+import CustomTheme from "./Charts/CustomTheme";
 import BarChart from "./Charts/HBarChart";
 import LineChart from "./Charts/HLineChart";
-import ChartDescription from "./Charts/ChartDescription";
 import PieChart from "./Charts/PieChart";
-import BudgetPieChart from "./Charts/BudgetPieChart";
-import CustomTheme from "./Charts/CustomTheme";
-import { Grid, Rail, Segment } from "semantic-ui-react";
-import FPTable from "./Foreign Policy/FPTable";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import PresidentsTable from "./PresidentsTable/PresidentsTable";
-import video from "../src/videoYang.mp4";
 import CoronavirusDataTable from "./Coronavirus Table/CoronavirusDataTable";
 import Elections from "./Elections/Elections";
-import React from "react";
+import FPolicy from "./Foreign Policy/FPolicy";
+import FPTable from "./Foreign Policy/FPTable";
+import InfoCard from "./Infocard/Infocard";
+import "./Infocard/Infocard.scss";
+import PresidentsTable from "./PresidentsTable/PresidentsTable";
+import Speech from "./Speeches/Speeches";
+import Taskbar from "./Taskbar/Taskbar";
+import "./Taskbar/Taskbar.css";
 
 const fetchData = () => {
   return fetch(
@@ -33,10 +32,6 @@ const fetchData = () => {
 };
 
 function App() {
-  // useEffect(() => {
-  //   testGoogle()
-  // }, [])
-
   useEffect(() => {
     fetchData().then((data) => {
       console.log(data);

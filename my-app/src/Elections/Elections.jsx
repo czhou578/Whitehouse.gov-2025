@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, Icon, Form } from "semantic-ui-react";
+import { Card, Form, Icon } from "semantic-ui-react";
 import Candidates from "../Candidates/Candidates";
 import "./elections.css";
 

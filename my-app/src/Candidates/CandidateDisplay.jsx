@@ -1,7 +1,7 @@
+import React from "react";
 import { useGetCandidatesQuery } from "../services/fec";
 import CandidateFinanceModal from "./CandidateFinanceModal";
 import "./display.css";
-import React from "react";
 
 const CandidateDisplay = (props) => {
   const { dataToQuery } = props;

@@ -6,7 +6,6 @@ const CandidateFinanceModal = (props) => {
   const { setOpen, open, name, candidate_id } = props;
   const { data, isLoading, isSuccess, error, isError } =
     useFinancesQuery(candidate_id);
-  // console.log(data);
   return (
     <div>
       <Modal

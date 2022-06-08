@@ -1,4 +1,4 @@
-import { VictoryChart, VictoryTheme, VictoryLine } from "victory";
+import { VictoryChart, VictoryLine, VictoryTheme } from "victory";
 
 export default function HLineChart(props) {
   return (

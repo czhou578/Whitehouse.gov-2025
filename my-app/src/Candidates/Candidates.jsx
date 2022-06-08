@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Header, Modal, Dropdown, Input } from "semantic-ui-react";
+import { Button, Dropdown, Header, Input, Modal } from "semantic-ui-react";
 import CandidateDisplay from "./CandidateDisplay";
 
 const activeOptions = [

@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  VictoryChart,
   VictoryAxis,
-  VictoryTheme,
   VictoryCandlestick,
+  VictoryChart,
+  VictoryTheme,
 } from "victory";
 
 export default class CustomTheme extends React.Component {

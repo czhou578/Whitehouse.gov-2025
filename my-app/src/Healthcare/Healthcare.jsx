@@ -1,5 +1,5 @@
-import "./Infocard.scss";
 import HorizonTab from "./HorizontalTab";
+import "./Infocard.scss";
 
 const styles = {
   display: "inline-block",

@@ -1,5 +1,5 @@
 import React from "react";
-import { VictoryBar, VictoryChart, VictoryAxis } from "victory";
+import { VictoryAxis, VictoryBar, VictoryChart } from "victory";
 
 const data = [
   { quarter: 1, earnings: 13000 },

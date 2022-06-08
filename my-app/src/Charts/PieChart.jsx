@@ -2,10 +2,6 @@ import React from "react";
 import { VictoryPie } from "victory";
 
 export default class PieChart extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const msg = this.props.msg;
     let chart;
